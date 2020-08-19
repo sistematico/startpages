@@ -127,11 +127,11 @@
                     input.placeholder = 'Pesquise no Gitlab';
                 } else if (search === 'gitlab') {
                     search = 'arch';
-                    document.searchform.action = 'https://reddit.com/search/';
+                    document.searchform.action = 'https://wiki.archlinux.org/index.php/';
                     input.placeholder = 'Pesquise na ArchWiki';
                 } else if (search === 'arch') {
                     search = 'wikipedia';
-                    document.searchform.action = 'https://reddit.com/search/';
+                    document.searchform.action = 'https://en.wikipedia.org/w/index.php';
                     input.placeholder = 'Pesquise na Wikipedia';
                 } else if (search === 'wikipedia') {
                     search = 'reddit';
@@ -141,6 +141,12 @@
                     search = 'ddg';
                     document.searchform.action = 'https://duckduckgo.com/';
                     input.placeholder = 'Pesquise no DuckDuckGo';
+                }
+
+                if (search === 'wikipedia' || search === 'arch') {
+                    input.setAttribute('name', 'search');
+                } else {
+                    input.setAttribute('name', 'q');
                 }
 
                 logo.src = 'img/icons/' + search + '.png';
