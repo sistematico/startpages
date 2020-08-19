@@ -151,14 +151,17 @@ a:hover { color: #BD3CD3; }
 	border: none;
 	outline: none;
 	background: none;
-	padding: 15px;
-	width: 470px;
+	/* padding: 15px; */
+	margin: 0;
+	padding: 0;
+	width: 460px;
+	height: 52px;
 	max-width: 97%;
 	color: whitesmoke;
 	font-size: 22px;
 	transition: 0.4px all;
 	border-radius: 3px 0px 0px 3px;
-	align-self: center;
+	/* align-self: center; */
 }
 
 .submit_button {
