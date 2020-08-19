@@ -62,13 +62,6 @@ a {
 a:link, a:visited, a:active { color: #8F9191; }
 a:hover { color: #BD3CD3; }
 
-/* .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-} */
-
 .head {
 	display: flex;
 	flex-direction: column;
@@ -160,7 +153,7 @@ a:hover { color: #BD3CD3; }
 	background: none;
 	padding: 15px;
 	width: 470px;
-	max-width: 98%;
+	max-width: 50%;
 	color: whitesmoke;
 	font-size: 22px;
 	transition: 0.4px all;
@@ -196,12 +189,7 @@ a:hover { color: #BD3CD3; }
 	align-self: center;
 }
 
-#searchform {
-	height: auto;
-}
-
-
-li{
+li {
 	font-size: 16px;
 	list-style-type: none;
 	padding:5px
