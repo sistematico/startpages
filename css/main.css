@@ -196,6 +196,10 @@ a:hover { color: #BD3CD3; }
 	align-self: center;
 }
 
+#searchform {
+	height: auto;
+}
+
 
 li{
 	font-size: 16px;
