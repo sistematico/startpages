@@ -181,7 +181,7 @@ a:hover { color: #BD3CD3; }
 	filter: saturate(160%) brightness(140%)!important;
 }
 
-.search_box {
+#searchform {
 	padding-bottom: 50px;
 	background: #222D32;
 	width: 560px;
