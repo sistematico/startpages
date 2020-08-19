@@ -182,12 +182,11 @@ a:hover { color: #BD3CD3; }
 }
 
 .search_box {
-	/* padding-bottom: 25px; */
+	padding-bottom: 50px;
 	background: #222D32;
 	width: 560px;
 	height: 52px;
-	/* padding: 0px; */
-	/* margin-bottom: 40px; */
+	margin-bottom: 40px;
 	border-radius: 3px 3px 3px 3px;
 	box-shadow: 0px 4px 5px #171D20;
 	/* align-self: center; */
