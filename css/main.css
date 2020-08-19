@@ -152,8 +152,8 @@ a:hover { color: #BD3CD3; }
 	outline: none;
 	background: none;
 	/* padding: 15px; */
-	width: 100%;
-	/* max-width: 97%; */
+	width: 470px;
+	max-width: 97%;
 	color: whitesmoke;
 	/* font-size: 22px; */
 	transition: 0.4px all;
