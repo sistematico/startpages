@@ -1,4 +1,4 @@
-let interval = setInterval(function() {
+let beatsinterval = setInterval(function() {
     let currentdate = new Date();
     let h = currentdate.getHours();
     let m = currentdate.getMinutes();
