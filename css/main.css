@@ -86,7 +86,7 @@ a:hover { color: #BD3CD3; }
 	background: #222D32;
 	line-height: 15px;
 	height: 15px; 
-	width: 200px;
+	width: 270px;
 }
 
 .clima {
@@ -96,6 +96,7 @@ a:hover { color: #BD3CD3; }
 
 .data {
 	justify-content: flex-end;
+	width: 250px;
 }
 
 .beats {
