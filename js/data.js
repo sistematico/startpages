@@ -1,8 +1,8 @@
 let icone, greet;
 
 let interval = setInterval(function() {
-    var currentdate = new Date(); 
-    var datetime = ('0' + currentdate.getDate()).slice(-2) + "/"
+    let currentdate = new Date(); 
+    let datetime = ('0' + currentdate.getDate()).slice(-2) + "/"
     + ('0' + currentdate.getMonth()).slice(-2)  + "/" 
     + currentdate.getFullYear() + " @ "  
     + ('0' + currentdate.getHours()).slice(-2) + ":"  
