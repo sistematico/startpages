@@ -9,7 +9,7 @@ let icone, greet;
 
 let interval = setInterval(function() {
     var currentdate = new Date(); 
-    var datetime = currentdate.getDate() + "/"
+    var datetime = ('0' + currentdate.getDate()).slice(-2) + "/"
     + (currentdate.getMonth()+1)  + "/" 
     + currentdate.getFullYear() + " @ "  
     + ('0' + currentdate.getHours()).slice(-2) + ":"  
