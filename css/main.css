@@ -37,14 +37,7 @@ header {
 	justify-content: space-between;
 	
 }
-
-/* .box {
-	display: flex;
-	flex-wrap: wrap;
-	height: 400px;
-	align-content: space-between;
-  } */
-  
+ 
 main {
 	flex-grow: 1;
 	display: flex;
@@ -100,20 +93,6 @@ a:hover { color: #BD3CD3; }
 .beats {
 	justify-content: center;
 }
-
-/* .data {
-	margin-right: 20px;
-}
-
-.clima {
-	margin-left: 20px;
-}
-
-.beats {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-} */
 
 .category {
 	font-family: "Nunito-Bold",sans-serif;
