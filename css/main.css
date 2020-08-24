@@ -33,7 +33,8 @@ header {
 	/* height: 60px; */
 	/* line-height: 60px; */
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+	width: 100%;
 }
 
 /* .box {
@@ -84,6 +85,19 @@ a:hover { color: #BD3CD3; }
 	background: #222D32;
 	line-height: 15px;
 	height: 15px; 
+}
+
+.clima {
+	justify-content: flex-start;
+}
+
+.data {
+	justify-content: flex-end;
+}
+
+.beats {
+	justify-content: center;
+	width: 50px;
 }
 
 /* .data {
