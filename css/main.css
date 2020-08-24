@@ -29,11 +29,19 @@ body {
 }
   
 header {
+	margin: 20px 20px 0 20px;
 	height: 60px;
 	line-height: 60px;
 	display: flex;
     justify-content: space-between;
 }
+
+/* .box {
+	display: flex;
+	flex-wrap: wrap;
+	height: 400px;
+	align-content: space-between;
+  } */
   
 main {
 	flex-grow: 1;
@@ -68,17 +76,17 @@ a:hover { color: #BD3CD3; }
 }
 
 .data, .clima, .beats {
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	border: #191C1E;
 	border-radius: 3px;
 	box-shadow: 0px 4px 5px #171D20;
 	padding: 15px;
 	background: #222D32;
-	line-height: 15px;
-	height: 15px; 
+	/* line-height: 15px; */
+	/* height: 15px;  */
 }
 
-.data {
+/* .data {
 	margin-right: 20px;
 }
 
@@ -90,7 +98,7 @@ a:hover { color: #BD3CD3; }
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
+} */
 
 .category {
 	font-family: "Nunito-Bold",sans-serif;
