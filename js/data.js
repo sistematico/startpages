@@ -23,11 +23,11 @@ let interval = setInterval(function() {
     }
 
     if (currentdate.getHours() > 18) {
-        greet = 'Boa noite Lucas! ';
+        greet = 'Boa noite! ';
     } else if (currentdate.getHours() > 11) {
-        greet = 'Boa tarde Lucas! ';
+        greet = 'Boa tarde! ';
     } else {
-        greet = 'Bom dia Lucas! ';
+        greet = 'Bom dia! ';
     }
 
     document.querySelector('.data').innerHTML = greet + datetime + icone;
