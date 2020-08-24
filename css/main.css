@@ -67,7 +67,7 @@ a:hover { color: #BD3CD3; }
 	flex-direction: column;
 }
 
-.data, .clima {
+.data, .clima, .beats {
 	margin-top: 20px;
 	border: #191C1E;
 	border-radius: 3px;
@@ -84,6 +84,12 @@ a:hover { color: #BD3CD3; }
 
 .clima {
 	margin-left: 20px;
+}
+
+.beats {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .category {
