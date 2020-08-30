@@ -6,5 +6,5 @@ let beatsinterval = setInterval(function() {
     // (UTC+1sec + (UTC+1min * 60) + (UTC+1hr * 3600)) / 86.4 
     let beats = (s + ((m * 60) + (h * 3600))) / 86.4;
     //document.querySelector('.beats').innerHTML = beats;
-    document.querySelector('.beats').innerHTML = Math.round((beats + Number.EPSILON) * 100) / 100;
+    document.querySelector('.beats').innerHTML = Math.round(beats * 100) / 100;
 },1000);
