@@ -41,7 +41,7 @@ function chgAction() {
 
 window.onload = function() {
     input.addEventListener('keydown', function (e) {
-        if (e.which == 9) {
+        if (e.key == 'Tab') {
             e.preventDefault();
             chgAction();
         }
