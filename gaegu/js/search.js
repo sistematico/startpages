@@ -5,31 +5,31 @@ function chgAction() {
     if (search === 'ddg') {
         search = 'google';
         document.searchform.action = "https://www.google.com/search";
-        input.placeholder = 'Pesquise no Google';
+        input.placeholder = 'Google';
     } else if (search === "google") {
         search = 'github';
         document.searchform.action = "https://github.com/";
-        input.placeholder = 'Pesquise no Github';
+        input.placeholder = 'Github';
     } else if (search === 'github') {
         search = 'gitlab';
         document.searchform.action = "https://gitlab.com/";
-        input.placeholder = 'Pesquise no Gitlab';
+        input.placeholder = 'Gitlab';
     } else if (search === 'gitlab') {
         search = 'arch';
         document.searchform.action = 'https://wiki.archlinux.org/index.php/';
-        input.placeholder = 'Pesquise na ArchWiki';
+        input.placeholder = 'ArchWiki';
     } else if (search === 'arch') {
         search = 'wikipedia';
         document.searchform.action = 'https://en.wikipedia.org/w/index.php';
-        input.placeholder = 'Pesquise na Wikipedia';
+        input.placeholder = 'Wikipedia';
     } else if (search === 'wikipedia') {
         search = 'reddit';
         document.searchform.action = 'https://reddit.com/search/';
-        input.placeholder = 'Pesquise no Reddit';
+        input.placeholder = 'Reddit';
     } else {
         search = 'ddg';
         document.searchform.action = 'https://duckduckgo.com/';
-        input.placeholder = 'Pesquise no DuckDuckGo';
+        input.placeholder = 'DuckDuckGo';
     }
 
     if (search === 'wikipedia' || search === 'arch') {
