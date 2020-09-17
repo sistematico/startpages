@@ -40,11 +40,11 @@ function chgAction() {
     }
 }
 
-window.onload = function() {
+//window.onload = function() {
     input.addEventListener('keydown', function (e) {
         if (e.key == 'Tab') {
             e.preventDefault();
             chgAction();
         }
     });
-};
+//};
