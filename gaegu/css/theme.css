@@ -121,6 +121,16 @@ nav {
   padding: 20px;
 }
 
+.esquerda {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.esquerda {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .icon-container {
     padding: 8px;
     margin-right: 10px;
