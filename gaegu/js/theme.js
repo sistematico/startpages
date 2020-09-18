@@ -11,7 +11,7 @@ if (currentTheme) {
     }
 }
 
-function switchTheme(e) {
+function switchTheme() {
     if (currentTheme === 'light') {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
