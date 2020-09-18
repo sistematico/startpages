@@ -24,12 +24,6 @@ textarea:focus,
 input:focus {
     outline: 0;
     border: 0;
-    border-bottom: 4px solid #4d79ff;
-}
-
-::placeholder {
-    color: #999;
-    text-shadow: 1px 1px 2px #222;
 }
 
 .w3-ul li {
@@ -41,7 +35,6 @@ input:focus {
 a,
 a > span {
     position: relative;
-    color: #999;
     text-decoration: none;
     line-height: 22px;
     transition: color .3s ease-in-out;
