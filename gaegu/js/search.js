@@ -6,7 +6,7 @@ let index, provider;
 if (currentIndex) {
     index = currentIndex;
 } else {
-    index = 1;
+    index = 0;
 }
 
 const providers = [
@@ -18,7 +18,13 @@ const providers = [
     {name: 'StackOverflow', url: 'https://stackoverflow.com/'}
 ];
 
-function chgAction() {    
+function chgAction() {
+    if (index < providers.length) {
+        index++;
+    } else {
+        index = 0;
+    }
+    
     provider = providers[index];
     searchform.action = provider.url;
     input.placeholder = provider.name;
@@ -27,12 +33,6 @@ function chgAction() {
         input.setAttribute('name', 'search');
     } else {
         input.setAttribute('name', 'q');
-    }
-
-    if (index < providers.length) {
-        index++;
-    } else {
-        index = 0;
     }
 
     document.documentElement.setAttribute('index', index);
