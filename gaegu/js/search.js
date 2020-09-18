@@ -14,7 +14,7 @@ function chgAction() {
     } else {
         index = 0;
     }
-    
+
     provider = providers[index];
 
     searchform.action = provider.url;
@@ -32,37 +32,37 @@ function chgAction() {
     //     return e.prop_2; 
     // }).indexOf('val_32'); 
 
-    if (search === 'ddg') {
-        search = 'google';
-        searchform.action = "https://www.google.com/search";
-        input.placeholder = 'Google';
-    } else if (search === "google") {
-        search = 'github';
-        searchform.action = "https://github.com/";
-        input.placeholder = 'Github';
-    } else if (search === 'github') {
-        search = 'gitlab';
-        searchform.action = "https://gitlab.com/";
-        input.placeholder = 'Gitlab';
-    } else if (search === 'gitlab') {
-        search = 'arch';
-        searchform.action = 'https://wiki.archlinux.org/index.php/';
-        input.placeholder = 'ArchWiki';
-    } else if (search === 'arch') {
-        search = 'wikipedia';
-        searchform.action = 'https://en.wikipedia.org/w/index.php';
-        input.placeholder = 'Wikipedia';
-    } else if (search === 'wikipedia') {
-        search = 'reddit';
-        searchform.action = 'https://reddit.com/search/';
-        input.placeholder = 'Reddit';
-    } else {
-        search = 'ddg';
-        searchform.action = 'https://duckduckgo.com/';
-        input.placeholder = 'DuckDuckGo';
-    }
+    // if (search === 'ddg') {
+    //     search = 'google';
+    //     searchform.action = "https://www.google.com/search";
+    //     input.placeholder = 'Google';
+    // } else if (search === "google") {
+    //     search = 'github';
+    //     searchform.action = "https://github.com/";
+    //     input.placeholder = 'Github';
+    // } else if (search === 'github') {
+    //     search = 'gitlab';
+    //     searchform.action = "https://gitlab.com/";
+    //     input.placeholder = 'Gitlab';
+    // } else if (search === 'gitlab') {
+    //     search = 'arch';
+    //     searchform.action = 'https://wiki.archlinux.org/index.php/';
+    //     input.placeholder = 'ArchWiki';
+    // } else if (search === 'arch') {
+    //     search = 'wikipedia';
+    //     searchform.action = 'https://en.wikipedia.org/w/index.php';
+    //     input.placeholder = 'Wikipedia';
+    // } else if (search === 'wikipedia') {
+    //     search = 'reddit';
+    //     searchform.action = 'https://reddit.com/search/';
+    //     input.placeholder = 'Reddit';
+    // } else {
+    //     search = 'ddg';
+    //     searchform.action = 'https://duckduckgo.com/';
+    //     input.placeholder = 'DuckDuckGo';
+    // }
 
-    if (search === 'wikipedia' || search === 'arch') {
+    if (provider.name === 'Wikipedia' || provider.name === 'ArchWiki') {
         input.setAttribute('name', 'search');
     } else {
         input.setAttribute('name', 'q');
