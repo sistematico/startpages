@@ -6,6 +6,7 @@
 ## Usage
 
 - Hit <TAB> on search input to change search provider.
+- Dark & Light themes using localstorage to remember last setting.
 
 ## ScreenShot
 
