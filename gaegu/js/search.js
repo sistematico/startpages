@@ -5,7 +5,7 @@
         { name: 'ArchWiki', url: 'https://wiki.archlinux.org/index.php/' },
         { name: 'Wikipedia', url: 'https://en.wikipedia.org/w/index.php' },
         { name: 'Reddit', url: 'https://reddit.com/search/' },
-        { name: 'StackOverflow', url: 'https://stackoverflow.com/' }
+        { name: 'StackOverflow', url: 'https://stackoverflow.com/search' }
     ];
 
     const max = providers.length;
