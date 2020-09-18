@@ -22,10 +22,12 @@ const providers = [
     {name: 'StackOverflow', url: 'https://stackoverflow.com/'}
 ];
 
-function chgAction() {
-    console.log(providers.length)
+let max = providers.length;
 
-    if (index < providers.length) {
+function chgAction() {
+    console.log(max)
+
+    if (index < max) {
         index++;
     } else {
         index = 0;
