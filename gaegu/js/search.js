@@ -31,7 +31,7 @@
             input.setAttribute('name', 'q');
         }
 
-        document.documentElement.setAttribute('index', index);
+        localStorage.setItem('index', index);
 
         if (index+1 < max) {
             index++;
