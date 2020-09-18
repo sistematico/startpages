@@ -21,19 +21,15 @@
     }
 
     function chgAction() {
-        console.log(max)
-
-        if (index == max) {
-            index = 0;
-        } else {
+        if (index+1 < max) {
             index++;
+        } else {
+            index = 0;
         }
 
         provider = providers[index];
         searchform.action = provider.url;
         input.placeholder = provider.name;
-
-        console.log([index, provider.name]);
 
         if (provider.name === 'Wikipedia' || provider.name === 'ArchWiki') {
             input.setAttribute('name', 'search');
