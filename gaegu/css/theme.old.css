@@ -21,6 +21,8 @@
 }
 
 body {
+    font-family: 'Gaegu', cursive;
+    font-size: 18px;
     background-color: var(--bg-color);
     color: var(--font-color);
     text-shadow: 1px 1px 2px var(--shadow-color);
