@@ -23,10 +23,10 @@
     function chgAction() {
         console.log(max)
 
-        if (index < max) {
-            index++;
-        } else {
+        if (index == max) {
             index = 0;
+        } else {
+            index++;
         }
 
         provider = providers[index];
