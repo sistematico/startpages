@@ -33,7 +33,7 @@
         searchform.action = provider.url;
         input.placeholder = provider.name;
 
-        console.log(provider.name);
+        console.log([index, provider.name]);
 
         if (provider.name === 'Wikipedia' || provider.name === 'ArchWiki') {
             input.setAttribute('name', 'search');
