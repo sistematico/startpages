@@ -19,11 +19,9 @@ h6 {
 }
 
 .w3-input {
-    color: #ccc;
     background: none;
-    border-bottom: 4px solid #222;
-    text-shadow: 1px 1px 2px #222;
     transition: border 0.3s ease;
+    caret-color: transparent;
 }
 
 textarea:focus,
