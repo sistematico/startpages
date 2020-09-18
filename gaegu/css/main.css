@@ -98,6 +98,7 @@ nav {
     body { font-size: 3rem; }
     .esquerda, .centro { display: none; }
     nav { justify-content: center; }
+    .icon { width: 100px; }
 }
 
 /* Medium devices (tablets, 768px and up) */
