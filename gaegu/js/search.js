@@ -6,7 +6,7 @@ let index, provider;
 if (currentIndex) {
     index = currentIndex;
 } else {
-    index = 0;
+    index = 1;
 }
 
 const providers = [
