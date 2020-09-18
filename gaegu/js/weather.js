@@ -17,7 +17,7 @@ function showPosition(position) {
     //console.log(response)
     return response.json();
   }).then(function (json) {
-    document.querySelector('.clima').innerHTML = json.main.temp + '°C';
+    document.getElementById('weather').innerHTML = json.main.temp + '°C';
   });
   
   //console.info("Latitude: " + position.coords.latitude);
