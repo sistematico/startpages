@@ -1,4 +1,4 @@
-# StartPage Gaegu
+# StartPage Dracula
 
-Demo [here](https://startpages.lucasbrum.net/gaegu);
-Credits [here](https://www.reddit.com/r/startpages/comments/hca1dj/simple_light_startpage/).
+Demo [here](https://startpages.lucasbrum.net/dracula).
+Credits [here](https://www.reddit.com/r/startpages/comments/hfuoqg/a_simple_startpage_i_have_been_working_on/).
