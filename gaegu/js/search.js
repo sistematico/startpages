@@ -1,3 +1,7 @@
+(function() {
+    // Código...
+
+
 const input = document.getElementById('search');
 const searchform = document.getElementById('searchform');
 const currentIndex = localStorage.getItem('index');
@@ -44,3 +48,5 @@ input.addEventListener('keydown', function (e) {
         chgAction();
     }
 });
+
+})();
