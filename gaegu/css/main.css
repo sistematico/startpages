@@ -69,6 +69,7 @@ a > span:after {
     height: 2px;
     transform: scaleX(0);
 }
+
 .effect:hover:before {
     transform: scaleX(0.85);
 }
