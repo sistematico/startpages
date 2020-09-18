@@ -29,4 +29,4 @@ function switchTheme(e) {
 
 //toggleSwitch.addEventListener('change', switchTheme, false);
 
-logo.addEventListener('click', switchTheme, false);
+icon.addEventListener('click', switchTheme, false);
