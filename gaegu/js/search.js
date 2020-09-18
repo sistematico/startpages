@@ -23,6 +23,8 @@ const providers = [
 ];
 
 function chgAction() {
+    console.log(providers.length)
+
     if (index < providers.length) {
         index++;
     } else {
