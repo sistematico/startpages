@@ -22,3 +22,5 @@ function showPosition(position) {
   //console.info("Latitude: " + position.coords.latitude);
   //console.info("Latitude: " + position.coords.longitude);
 }
+
+getLocation();
