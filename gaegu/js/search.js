@@ -1,8 +1,25 @@
 const input = document.getElementById('search');
 const searchform = document.getElementById('searchform');
 let search = 'google';
+const providers = [
+    {name: 'Google', url: 'https://www.google.com/search'},
+    {name: 'DuckDuckGo', url: 'https://duckduckgo.com/'}
+];
 
 function chgAction() {
+
+    // switch (search) {
+    //     case 'ddg':
+
+    //         break;
+    //     default:
+    //         console.log(`Sorry, we are out of ${expr}.`);
+    // }
+
+    var pos = GFG_Array.map(function(e) { 
+        return e.prop_2; 
+    }).indexOf('val_32'); 
+
     if (search === 'ddg') {
         search = 'google';
         searchform.action = "https://www.google.com/search";
