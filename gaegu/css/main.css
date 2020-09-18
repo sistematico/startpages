@@ -2,6 +2,7 @@ body {
     font-family: 'Gaegu', cursive;
     font-size: 18px;
 }
+
 h1,
 h2,
 h3,
@@ -14,21 +15,9 @@ h6 {
     margin: 0;
 }
 
-.w3-input {
-    background: none;
-    transition: border 0.3s ease;
-    caret-color: transparent;
-}
-
 textarea:focus,
 input:focus {
     outline: 0;
-    border: 0;
-}
-
-.w3-ul li {
-    line-height: 20px;
-    padding: 0;
     border: 0;
 }
 
@@ -47,6 +36,26 @@ a > span:after {
     content: '';
     position: absolute;
     transition: transform .3s ease-in-out;
+}
+
+#logo {
+    display: block;
+    margin-bottom: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.w3-input {
+    background: none;
+    transition: border 0.3s ease;
+    caret-color: transparent;
+}
+
+.w3-ul li {
+    line-height: 20px;
+    padding: 0;
+    border: 0;
 }
 
 .effect {
