@@ -13,10 +13,11 @@ function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
 
-  fetch('https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid=3dedab9a1e2b6e1cb120ae2f421b477d').then(function (response) {
-    return response.json();
+  fetch(`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid=3dedab9a1e2b6e1cb120ae2f421b477d`).then(function (response) {
+    console.log(response)
+    //return response.json();
   }).then(function (json) {
-    document.querySelector('.clima').innerHTML = '<i class="fas fa-thermometer-half"></i> ' + json.main.temp + '°C';
+    //document.querySelector('.clima').innerHTML = '<i class="fas fa-thermometer-half"></i> ' + json.main.temp + '°C';
   });
   
   //console.info("Latitude: " + position.coords.latitude);
