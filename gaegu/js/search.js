@@ -21,12 +21,6 @@
     }
 
     function chgAction() {
-        if (index+1 < max) {
-            index++;
-        } else {
-            index = 0;
-        }
-
         provider = providers[index];
         searchform.action = provider.url;
         input.placeholder = provider.name;
@@ -38,6 +32,12 @@
         }
 
         document.documentElement.setAttribute('index', index);
+
+        if (index+1 < max) {
+            index++;
+        } else {
+            index = 0;
+        }
     }
 
     input.addEventListener('keydown', function (e) {
@@ -46,5 +46,7 @@
             chgAction();
         }
     });
+
+    chgAction();
 
 })();
