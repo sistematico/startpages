@@ -95,7 +95,9 @@ nav {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    body { font-size: 3rem; }
     .esquerda, .centro { display: none; }
+    nav { justify-content: center; }
 }
 
 /* Medium devices (tablets, 768px and up) */
