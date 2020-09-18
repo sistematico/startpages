@@ -34,13 +34,13 @@ function chgAction() {
     } else {
         index = 0;
     }
+
+    document.documentElement.setAttribute('index', index);
 }
 
-//window.onload = function() {
-    input.addEventListener('keydown', function (e) {
-        if (e.key == 'Tab') {
-            e.preventDefault();
-            chgAction();
-        }
-    });
-//};
+input.addEventListener('keydown', function (e) {
+    if (e.key == 'Tab') {
+        e.preventDefault();
+        chgAction();
+    }
+});
