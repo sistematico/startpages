@@ -94,7 +94,7 @@ nav {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     body { font-size: 3rem; }
     .esquerda, .centro { display: none; }
     nav { justify-content: center; }
@@ -102,13 +102,20 @@ nav {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    body { font-size: 3rem; }
+    .esquerda, .centro { display: none; }
+    nav { justify-content: center; }
+    .direita { width: 100px; height: 100px; }
 
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
+@media (max-width: 992px) {
+    body { font-size: 3rem; }
+    .esquerda, .centro { display: none; }
+    nav { justify-content: center; }
+    .direita { width: 100px; height: 100px; }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
