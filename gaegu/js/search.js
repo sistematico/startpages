@@ -1,12 +1,24 @@
 const input = document.getElementById('search');
 const searchform = document.getElementById('searchform');
-let search = 'google';
+
+let search = 'google', index = 0, provider;
+
 const providers = [
     {name: 'Google', url: 'https://www.google.com/search'},
     {name: 'DuckDuckGo', url: 'https://duckduckgo.com/'}
 ];
 
 function chgAction() {
+    if (index < providers.length) {
+        index++;
+    } else {
+        index = 0;
+    }
+    
+    provider = providers[index];
+
+    searchform.action = provider.url;
+    input.placeholder = provider.name;
 
     // switch (search) {
     //     case 'ddg':
@@ -16,9 +28,9 @@ function chgAction() {
     //         console.log(`Sorry, we are out of ${expr}.`);
     // }
 
-    var pos = GFG_Array.map(function(e) { 
-        return e.prop_2; 
-    }).indexOf('val_32'); 
+    // var pos = GFG_Array.map(function(e) { 
+    //     return e.prop_2; 
+    // }).indexOf('val_32'); 
 
     if (search === 'ddg') {
         search = 'google';
