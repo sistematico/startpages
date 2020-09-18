@@ -67,32 +67,6 @@ a:hover {
     transform: scaleX(0.85);
 }
 
-#logo {
-    display: block;
-    margin-bottom: -25px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-nav {
-  display: flex;
-  /* justify-content: flex-end; */
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.esquerda {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.esquerda {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .icon-container {
     padding: 8px;
     margin-right: 10px;
