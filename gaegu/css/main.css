@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Gaegu', cursive;
     font-size: 18px;
@@ -38,13 +42,18 @@ a > span:after {
     transition: transform .3s ease-in-out;
 }
 
+form, input { width: 100%; }
+
 input {
     background: none;
     transition: border 0.3s ease;
     caret-color: transparent;
+    text-align: center;
+    border: 0;
 }
 
 .container { 
+    display: flex;
     align-items: center; 
     justify-content: center; 
     flex-direction: column; 
@@ -56,10 +65,18 @@ input {
 
 .links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.w3-ul li {
+.cat {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
     line-height: 20px;
     padding: 0;
     border: 0;
