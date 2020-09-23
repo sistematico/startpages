@@ -3,14 +3,13 @@ body {
     font-size: 18px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gaegu', cursive;
     font-weight: 700;
     padding: 6px;
     margin: 0;
@@ -22,7 +21,8 @@ input:focus {
     border: 0;
 }
 
-a,a > span {
+a,
+a > span {
     position: relative;
     text-decoration: none;
     line-height: 22px;
@@ -38,25 +38,18 @@ a > span:after {
     transition: transform .3s ease-in-out;
 }
 
-input {
+#logo {
+    display: block;
+    margin-bottom: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.w3-input {
     background: none;
     transition: border 0.3s ease;
     caret-color: transparent;
-}
-
-.container { 
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column; 
-} 
-
-.container img {
-    max-width: 300px; 
-}
-
-.links {
-    display: flex;
-    flex-direction: column;
 }
 
 .w3-ul li {
@@ -83,6 +76,21 @@ input {
 
 .invert {
     filter: invert(100%);
+}
+
+img {
+    display: block;
+    margin-bottom: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
