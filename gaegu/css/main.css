@@ -3,13 +3,6 @@ body {
     font-size: 18px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
     padding: 6px;
@@ -59,9 +52,26 @@ input {
     min-height: 100vh;
 } 
 
+.inner {
+    width: 100%;
+    max-width: 350px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    position: relative;
+    width: 100%;
+}
+
 footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .cat {
@@ -70,6 +80,8 @@ footer {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    border: 0;
 }
 
 li {
@@ -121,9 +133,4 @@ li {
     .esquerda, .centro { display: none; }
     nav { justify-content: center; }
     .direita { width: 100px; height: 100px; }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
 }
