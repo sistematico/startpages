@@ -1,8 +1,10 @@
-var ulDevel = document.querySelector('.devel');
+var uls = document.querySelector('footer');
 
-const devel = [
-    {nome: 'Google', link: 'www.google.com'},
-    {nome: 'Google', link: 'www.google.com'},
+const divs = [
+    {nome: 'devel1', links: 'www.google.com'},
+    {nome: 'info1', links: 'www.google.com'},
+    {nome: 'video1', links: 'www.google.com'},
+    {nome: 'social1', links: 'www.google.com'}
 ];
 
 //for (var prop in obj) {
@@ -10,10 +12,15 @@ const devel = [
     //console.log("obj." + prop + " = " + obj[prop]);
 //}
 
-for (let link of devel) {
-    let newNode = document.createElement('div');
-    newNode.innerHTML = link.nome;
-    ulDevel.after(newNode);
+for (let item of divs) {
+    let newUl = document.createElement('ul');
+    let newLi = document.createElement('li');
+    newLi.innerHTML = '<h4>' + item.nome + '</h4>';
+    newLi.before(newUl);
+
+    uls.before(newUl);
+    //newUl.innerHTML = '<h4>' + item.nome + '</h4>';
+    //uls.before(newUl);
 }
 
 
