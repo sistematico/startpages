@@ -15,13 +15,12 @@ const divs = [
 for (let item of divs) {
     let newDiv = document.createElement('div');
     newDiv.classList.add("cat");
+    
     let newUl = document.createElement('ul');
     newUl.innerHTML = '<h4>' + item.nome + '</h4>';
     newDiv.before(newUl);
-
     
-    //newUl.innerHTML = '<h4>' + item.nome + '</h4>';
-    //uls.before(newUl);
+    footer.before(newDiv);
 }
 
 
