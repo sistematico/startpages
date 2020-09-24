@@ -43,8 +43,11 @@ if (isset($_POST['link1'])) {
                 <img id="logo" src="img/mountain.png" />
                 <?php if (isset($arr)) { echo json_encode($arr); } ?>
                 <form id="searchform" action="edit.php" method="post">
+                    <input id="search" type="text" name="nome1" placeholder="Nome1" />
                     <input id="search" type="text" name="link1" placeholder="Link1" />
+                    <input id="search" type="text" name="nome2" placeholder="Nome2" />
                     <input id="search" type="text" name="link2" placeholder="Link2" />
+                    <input id="search" type="text" name="nome3" placeholder="Nome3" />
                     <input id="search" type="text" name="link3" placeholder="Link3" />
                     <input type="submit" value="Enviar" />
                 </form>
