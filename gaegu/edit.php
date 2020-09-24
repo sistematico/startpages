@@ -1,22 +1,18 @@
 <?php 
 
-$arr = [
-    'info'=>[
-        ['nome'=>'Google','url'=>'google.com'],
-        ['nome'=>'Facebook','url'=>'facebook.com']
-    ]
-];
+if (isset($_POST['link1'])) { 
+    foreach ($_POST as $key => $value) {
+        $arr = [
+            $key=>[
+                ['nome'=>'Google','url'=>'google.com'],
+                ['nome'=>'Facebook','url'=>'facebook.com']
+            ]
+        ];
+    }
 
-file_put_contents('json/links.json', json_encode($arr));
-
-// if (isset($_POST['link1'])) { 
-//     foreach ($_POST as $key => $value) {
-//         $arr = [
-            
-//         ];
-//     }
+    file_put_contents('json/links.json', json_encode($arr));
     
-// }
+}
 
 ?>
 <!DOCTYPE html>
