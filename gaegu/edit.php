@@ -25,9 +25,9 @@
             <main>
                 <img id="logo" src="img/mountain.png" />
                 <form id="searchform" method="get" action="edit.php" method="post">
-                    <input id="search" type="text" name="link1" />
-                    <input id="search" type="text" name="link1" />
-                    <input id="search" type="text" name="link1" />
+                    <input id="search" type="text" name="link1" placeholder="Link1" />
+                    <input id="search" type="text" name="link1" placeholder="Link2" />
+                    <input id="search" type="text" name="link1" placeholder="Link3" />
                 </form>
             </main>
 
