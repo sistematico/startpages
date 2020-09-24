@@ -7,6 +7,8 @@ $arr = [
     ]
 ];
 
+file_put_contents('json/links.json', json_encode($arr));
+
 // if (isset($_POST['link1'])) { 
 //     foreach ($_POST as $key => $value) {
 //         $arr = [
