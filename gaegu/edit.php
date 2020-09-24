@@ -1,13 +1,21 @@
 <?php 
 
-    if (isset($_POST['link1'])) { 
-        foreach ($_POST as $key => $value) {
-            $arr = [
-                
-            ];
-        }
-        
-    }
+$arr = [
+    'categoria'=>'info',
+    'links'=>[
+        ['nome'=>'Google','url'=>'google.com'],
+        ['nome'=>'Facebook','url'=>'facebook.com']
+    ]
+];
+
+// if (isset($_POST['link1'])) { 
+//     foreach ($_POST as $key => $value) {
+//         $arr = [
+            
+//         ];
+//     }
+    
+// }
 
 ?>
 <!DOCTYPE html>
@@ -36,7 +44,7 @@
 
             <main>
                 <img id="logo" src="img/mountain.png" />
-                <?php if (isset($link1)) { echo $link1; } ?>
+                <?php if (isset($arr)) { echo json_encode($arr); } ?>
                 <form id="searchform" action="edit.php" method="post">
                     <input id="search" type="text" name="link1" placeholder="Link1" />
                     <input id="search" type="text" name="link2" placeholder="Link2" />
