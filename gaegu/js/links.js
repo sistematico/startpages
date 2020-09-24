@@ -1,5 +1,14 @@
 var footer = document.querySelector('footer');
 
+
+fetch('json/links.json')
+.then(res => res.json())
+.then((out) => {
+  console.log('Checkout this JSON! ', out);
+})
+.catch(err => { throw err });
+
+
 const divs = [
     {nome: 'devel', links: [
         {nome: 'Google', link: 'www.google.com'}

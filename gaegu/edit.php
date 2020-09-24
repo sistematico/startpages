@@ -1,7 +1,12 @@
 <?php 
 
     if (isset($_POST['link1'])) { 
-        $link1 = $_POST['link1']; 
+        foreach ($_POST as $key => $value) {
+            $arr = [
+                
+            ];
+        }
+        
     }
 
 ?>
