@@ -20,7 +20,7 @@ for (let item of divs) {
 
     let newLi = document.createElement('li');
     
-    // newLi.innerHTML = '<h4>' + item.nome + '</h4>';    
+    newLi.innerHTML = '<h4>' + item.nome + '</h4>';    
     
     newUl.before(newLi);
 
