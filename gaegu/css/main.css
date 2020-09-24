@@ -36,6 +36,8 @@ form {
 }
 
 input {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.3rem;
     background: none;
     transition: border 0.3s ease;
     caret-color: transparent;
@@ -108,29 +110,4 @@ li {
 
 .invert {
     filter: invert(100%);
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-    /* body { font-size: 3rem; } */
-    /* .esquerda, .centro { display: none; } */
-    /* nav { justify-content: center; } */
-    /* .direita { width: 100px; height: 100px; } */
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-    /* body { font-size: 3rem; } */
-    /* .esquerda, .centro { display: none; } */
-    /* nav { justify-content: center; } */
-    /* .direita { width: 100px; height: 100px; } */
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-    /* body { font-size: 3rem; } */
-    /* .esquerda, .centro { display: none; } */
-    /* nav { justify-content: center; } */
-    /* .direita { width: 100px; height: 100px; } */
 }
