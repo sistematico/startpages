@@ -1,3 +1,10 @@
+<?php 
+
+    if (isset($_POST['link1'])) { 
+        $link1 = $_POST['link1']; 
+    }
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +31,7 @@
 
             <main>
                 <img id="logo" src="img/mountain.png" />
-                <?php if (isset($_POST['link1'])) { echo $_POST['link1']; } ?>
+                <?php if (isset($link1)) { echo $link1; } ?>
                 <form id="searchform" action="edit.php" method="post">
                     <input id="search" type="text" name="link1" placeholder="Link1" />
                     <input id="search" type="text" name="link1" placeholder="Link2" />
