@@ -27,7 +27,7 @@ for (let item of divs) {
 
     for (let subitem of item.links) {
         let newSubItem = document.createElement('li');
-        newSubItem.innerHTML = '<h4><a class="effect" href="' + subitem.link + '">' + subitem.nome + '</a></h4>';    
+        newSubItem.innerHTML = '<a class="effect" href="' + subitem.link + '">' + subitem.nome + '</a>';
         newUl.appendChild(newSubItem);
     }    
     newDiv.appendChild(newUl);
