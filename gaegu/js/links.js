@@ -17,8 +17,10 @@ for (let item of divs) {
     newDiv.classList.add("cat");
     
     let newUl = document.createElement('ul');
-    newUl.innerHTML = '<h4>' + item.nome + '</h4>';
-    newDiv.before(newUl);
+
+    let newLi = document.createElement('li');
+    newLi.innerHTML = '<h4>' + item.nome + '</h4>';    
+    newUl.before(newLi);
     
     footer.before(newDiv);
 }
