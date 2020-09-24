@@ -15,11 +15,16 @@ const divs = [
 for (let item of divs) {
     let newDiv = document.createElement('div');
     newDiv.classList.add("cat");
-    newDiv.innerHTML = '<h4>' + item.nome + '</h4>';    
 
+    let newUl = document.createElement('ul');
+    
+    let newLi = document.createElement('li');
+    newLi.innerHTML = '<h4>Nome' + item.nome + '</h4>';
+    
+    newUl.appendChild(newLi);
+    newDiv.appendChild(newUl);
     footer.appendChild(newDiv);
     
-    //let newUl = document.createElement('ul');
 
     //let newLi = document.createElement('li');
     
