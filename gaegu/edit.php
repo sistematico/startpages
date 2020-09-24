@@ -24,8 +24,10 @@
 
             <main>
                 <img id="logo" src="img/mountain.png" />
-                <form id="searchform" method="get" action="https://www.google.com/search" target="_blank">
-                    <input id="search" class="w3-input w3-center w3-section" type="text" name="q" placeholder="Google" autofocus />
+                <form id="searchform" method="get" action="edit.php" method="post">
+                    <input id="search" type="text" name="link1" />
+                    <input id="search" type="text" name="link1" />
+                    <input id="search" type="text" name="link1" />
                 </form>
             </main>
 
