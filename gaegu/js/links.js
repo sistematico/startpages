@@ -1,4 +1,4 @@
-var uls = document.querySelector('footer');
+var footer = document.querySelector('footer');
 
 const divs = [
     {nome: 'devel1', links: 'www.google.com'},
@@ -13,12 +13,13 @@ const divs = [
 //}
 
 for (let item of divs) {
+    let newDiv = document.createElement('div');
+    newDiv.classList.add("cat");
     let newUl = document.createElement('ul');
-    let newLi = document.createElement('li');
-    newLi.innerHTML = '<h4>' + item.nome + '</h4>';
-    newLi.before(newUl);
+    newUl.innerHTML = '<h4>' + item.nome + '</h4>';
+    newDiv.before(newUl);
 
-    uls.before(newUl);
+    
     //newUl.innerHTML = '<h4>' + item.nome + '</h4>';
     //uls.before(newUl);
 }
