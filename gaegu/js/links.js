@@ -15,11 +15,6 @@ const divs = [
     ]}
 ];
 
-//for (var prop in obj) {
-    // ctrl+shift+k (para abrir o console no mozilla firefox)
-    //console.log("obj." + prop + " = " + obj[prop]);
-//}
-
 for (let item of divs) {
     let newDiv = document.createElement('div');
     newDiv.classList.add("cat");
@@ -32,27 +27,9 @@ for (let item of divs) {
 
     for (let subitem of item.links) {
         let newSubItem = document.createElement('li');
-        newSubItem.innerHTML = '<h4>' + subitem.nome + '</h4>';    
+        newSubItem.innerHTML = '<h4><a class="effect" href="' + subitem.link + '">' + subitem.nome + '</a></h4>';    
         newUl.appendChild(newSubItem);
-    }
-
-    
+    }    
     newDiv.appendChild(newUl);
     footer.appendChild(newDiv);
-
 }
-
-
-
-// var slides = document.getElementsByClassName("slide");
-// for (var i = 0; i < slides.length; i++) {
-//    Distribute(slides.item(i));
-// }
-
-
-// var arrows = document.getElementsByClassName("divs");
-// for(var i = 0; i < arrows.length; i++){
-//     if(obj != arrows[i]){
-//         arrows[i].style.display = "none";
-//     }
-// }
