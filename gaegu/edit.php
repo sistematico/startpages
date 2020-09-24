@@ -9,6 +9,14 @@ if (isset($_POST['link1'])) {
     foreach ($_POST as $key => $value) {
         $nome = preg_replace('/[0-9]+/', '', $key);
 
+        if ($nome == 'devel') {
+            $devel[] = 
+        }
+
+        
+
+
+
         $arr = [
             $key=>[
                 ['nome'=>'Google','url'=>'google.com'],
