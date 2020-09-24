@@ -1,8 +1,7 @@
 <?php 
 
 $arr = [
-    'categoria'=>'info',
-    'links'=>[
+    'info'=>[
         ['nome'=>'Google','url'=>'google.com'],
         ['nome'=>'Facebook','url'=>'facebook.com']
     ]
