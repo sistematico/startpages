@@ -124,6 +124,15 @@ li {
 
 @media only all and (orientation: portrait) {
     body {
-        font-size: 0.8em;
+        font-size: 0.9em;
+    }
+
+    .conteiner, footer {
+        witdh: 100%;
+    }
+
+    .cat {
+        margin: 0;
+        padding: 0;
     }
 }
