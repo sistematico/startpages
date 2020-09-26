@@ -121,3 +121,9 @@ li {
 .invert {
     filter: invert(100%);
 }
+
+@media only all and (orientation: portrait) {
+    body {
+        margin: 0;
+    }
+}
