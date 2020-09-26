@@ -36,7 +36,8 @@ a > span:after {
 }
 
 form {
-    width: 90%;
+    width: 100%;
+    text-align: center;
 }
 
 input {
@@ -47,7 +48,7 @@ input {
     caret-color: transparent;
     text-align: center;
     border: 0;
-    width: 100%;
+    width: 50%;
 }
 
 .container { 
