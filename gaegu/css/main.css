@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Gaegu', cursive;
     font-size: 18px;
@@ -51,7 +55,7 @@ input {
     align-items: center; 
     justify-content: center; 
     flex-direction: column; 
-    min-height: 100vh;
+    /* min-height: 100vh; */
 } 
 
 .inner {
