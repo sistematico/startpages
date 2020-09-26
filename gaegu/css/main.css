@@ -139,4 +139,6 @@ li {
     .cat:nth-child(3) {
         display: none;
     }
+
+    .esquerda, .direita { margin: 0 10px; }
 }
