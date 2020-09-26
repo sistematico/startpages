@@ -124,6 +124,6 @@ li {
 
 @media only all and (orientation: portrait) {
     body {
-        margin: 0;
+        font-size: 0.8em;
     }
 }
