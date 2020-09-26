@@ -135,4 +135,8 @@ li {
         margin: 0;
         padding: 0;
     }
+
+    .cat:nth-child(3) {
+        display: none;
+    }
 }
