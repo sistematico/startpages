@@ -6,32 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>StartPages</title>
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
         body {
             background: #282a36;
             color: #f8f8f2;
+            margin: 0;
         }
-        
+
         .container {
-            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .gaegu, .dracula {
+        .container a img {
             margin: 20px;
-            background: #44475a;
+            width: 300px;
+            max-height: 100%;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="gaegu">
-            <a href="gaegu/"><img src="gaegu/img/mountain.png" /></a>
-        </div>
-        <div class="dracula">
-            <a href="dracula/">Dracula</a>
-        </div>
+        <a href="evening/"><img src="thumb-evening.png" class="responsive" /></a>
+        <a href="gaegu/"><img src="thumb-gaegu.png" class="responsive" /></a>
+        <a href="dracula/"><img src="thumb-dracula.png" class="responsive" /></a>
     </div>
 </body>
 </html>
