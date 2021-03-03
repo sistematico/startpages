@@ -37,22 +37,6 @@ a > span:after {
     transition: transform .3s ease-in-out;
 }
 
-form {
-    width: 100%;
-    text-align: center;
-}
-
-input {
-    font-family: 'Gaegu', cursive;
-    font-size: 1.3rem;
-    background: none;
-    transition: border 0.3s ease;
-    caret-color: transparent;
-    text-align: center;
-    border: 0;
-    width: 50%;
-}
-
 .container { 
     display: flex;
     align-items: center; 
@@ -63,7 +47,7 @@ input {
 
 .inner {
     width: 100%;
-    max-width: 550px;
+    max-width: 600px;
 }
 
 nav {
@@ -75,13 +59,6 @@ nav {
 #logo {
     position: relative;
     width: 100%;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    justify-content: space-around;
 }
 
 .cat {
@@ -99,6 +76,29 @@ li {
     line-height: 20px;
     padding: 0;
     border: 0;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.3rem;
+    background: none;
+    transition: border 0.3s ease;
+    caret-color: transparent;
+    text-align: center;
+    border: 0;
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content: space-around;
 }
 
 .effect {
