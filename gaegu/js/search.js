@@ -1,11 +1,13 @@
+// https://www.youtube.com/results?search_query=php+json+api
 (function () {
     const providers = [
         { name: 'Google', url: 'https://www.google.com/search' },
+        { name: 'Youtube', url: 'https://www.youtube.com/results' },
         { name: 'DuckDuckGo', url: 'https://duckduckgo.com/' },
-        { name: 'ArchWiki', url: 'https://wiki.archlinux.org/index.php/' },
+        { name: 'StackOverflow', url: 'https://stackoverflow.com/search' },
         { name: 'Wikipedia', url: 'https://en.wikipedia.org/w/index.php' },
         { name: 'Reddit', url: 'https://reddit.com/search/' },
-        { name: 'StackOverflow', url: 'https://stackoverflow.com/search' }
+        { name: 'ArchWiki', url: 'https://wiki.archlinux.org/index.php/' }
     ];
 
     const max = providers.length;
@@ -27,6 +29,8 @@
 
         if (provider.name === 'Wikipedia' || provider.name === 'ArchWiki') {
             input.setAttribute('name', 'search');
+        } else if (provider.name === 'Youtube') {
+            input.setAttribute('name', 'search_query');
         } else {
             input.setAttribute('name', 'q');
         }
