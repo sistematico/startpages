@@ -26,6 +26,28 @@
         provider = providers[index];
         searchform.action = provider.url;
         input.placeholder = provider.name;
+        input.classList.remove(
+            'input-google', 
+            'input-youtube', 
+            'input-duckduckgo', 
+            'input-stackoverflow', 
+            'input-wikipedia', 
+            'input-reddit', 
+            'input-archwiki',
+            'input-google-d', 
+            'input-youtube-d', 
+            'input-duckduckgo-d', 
+            'input-stackoverflow-d', 
+            'input-wikipedia-d', 
+            'input-reddit-d', 
+            'input-archwiki-d'
+        );
+        
+        if (localStorage.getItem('theme') === 'dark') {
+            input.classList.add('input-' + provider.name.toLowerCase() + '-d');
+        } else {
+            input.classList.add('input-' + provider.name.toLowerCase());
+        }
 
         if (provider.name === 'Wikipedia' || provider.name === 'ArchWiki') {
             input.setAttribute('name', 'search');

@@ -10,5 +10,5 @@
 
 ## ScreenShot
 
-![Light](https://raw.githubusercontent.com/sistematico/startpages/master/gaegu/light.png)
-![Dark](https://raw.githubusercontent.com/sistematico/startpages/master/gaegu/dark.png)
+![Light](https://raw.githubusercontent.com/sistematico/startpages/master/gaegu/img/light.png)
+![Dark](https://raw.githubusercontent.com/sistematico/startpages/master/gaegu/img/dark.png)

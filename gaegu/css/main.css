@@ -1,147 +1,183 @@
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
 html {
-    transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
 }
 
 body {
-    font-family: 'Gaegu', cursive;
-    font-size: 17px;
+  font-family: "Gaegu", cursive;
+  font-size: 17px;
+  transition: all 300ms ease-in-out;
 }
 
 /* h1,h2,h3,h4,h5,h6 { */
 .title {
-    font-weight: 700;
-    font-size: 1.2em;
-    padding: 7px;
-    margin: 0;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 7px;
+  margin: 0;
 }
 
 textarea:focus,
 input:focus {
-    outline: 0;
-    border: 0;
+  outline: 0;
+  border: 0;
 }
 
-a,a > span {
-    position: relative;
-    text-decoration: none;
-    line-height: 22px;
-    transition: color .3s ease-in-out;
+a,
+a > span {
+  position: relative;
+  text-decoration: none;
+  line-height: 22px;
+  transition: color 0.3s ease-in-out;
 }
 
 a:before,
 a:after,
 a > span:before,
 a > span:after {
-    content: '';
-    position: absolute;
-    transition: transform .3s ease-in-out;
+  content: "";
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
 }
 
-.container { 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column; 
-    min-height: 100vh;
-} 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .inner {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .cat {
-    text-align: center;
-    margin: 0 5px;
+  text-align: center;
+  margin: 0 5px;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    border: 0;
+  list-style-type: none;
+  padding: 0;
+  border: 0;
 }
 
 li {
-    line-height: 20px;
-    padding: 0;
-    border: 0;
+  line-height: 20px;
+  padding: 0;
+  border: 0;
 }
 
 form {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 input {
-    font-family: 'Gaegu', cursive;
-    font-size: 1.3rem;
-    background: none;
-    transition: border 0.3s ease;
-    caret-color: transparent;
-    text-align: center;
-    border: 0;
-    width: 50%;
+  font-family: "Gaegu", cursive;
+  font-size: 1.3rem;
+  background: none;
+  transition: border 0.3s ease;
+  caret-color: transparent;
+  text-align: center;
+  border: 0;
+  width: 50%;
 }
 
+.input-icon {
+  /* background-image: url('../img/icons/google.svg'), linear-gradient(to left, #777 0%, #fff 1px, #fff 100%); */
+  background-size: 16px, 50%;
+  background-position: center right; /* legacy browser support */
+  background-position: center right 10px, center right 38px;
+  background-repeat: no-repeat;
+  /* Prevents text overlap on the icon */
+  /* padding-right: 42px; */
+  /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); */
+}
+
+/* Google, Youtube, DuckDuckGo, StackOverflow, Wikipedia, Reddit, ArchWiki */
+/* <img height="32" width="32" src="https://unpkg.com/simple-icons@v4/icons/[ICON SLUG].svg" /> */
+.input-google { background-image: url('../img/icons/google.svg'); }
+.input-youtube { background-image: url('../img/icons/youtube.svg'); }
+.input-duckduckgo { background-image: url('../img/icons/duckduckgo.svg'); }
+.input-stackoverflow { background-image: url('../img/icons/stackoverflow.svg'); }
+.input-wikipedia { background-image: url('../img/icons/wikipedia.svg'); }
+.input-reddit { background-image: url('../img/icons/reddit.svg'); }
+.input-archwiki { background-image: url('../img/icons/archwiki.svg'); }
+
+.input-google-d { background-image: url('../img/icons/google-d.svg'); }
+.input-youtube-d { background-image: url('../img/icons/youtube-d.svg'); }
+.input-duckduckgo-d { background-image: url('../img/icons/duckduckgo-d.svg'); }
+.input-stackoverflow-d { background-image: url('../img/icons/stackoverflow-d.svg'); }
+.input-wikipedia-d { background-image: url('../img/icons/wikipedia-d.svg'); }
+.input-reddit-d { background-image: url('../img/icons/reddit-d.svg'); }
+.input-archwiki-d { background-image: url('../img/icons/archwiki-d.svg'); }
+
 footer {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  justify-content: space-around;
 }
 
 .effect {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .effect:before {
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 2px;
-    transform: scaleX(0);
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
 }
 
 .effect:hover:before {
-    transform: scaleX(0.85);
+  transform: scaleX(0.85);
 }
 
 .invert {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 @media only all and (orientation: portrait) {
-    body {
-        font-size: 0.9em;
-    }
+  body {
+    font-size: 0.9em;
+  }
 
-    .conteiner, footer {
-        witdh: 100%;
-    }
+  .container,
+  footer {
+    width: 100%;
+  }
 
-    .cat {
-        margin: 0;
-        padding: 0;
-    }
+  .cat {
+    margin: 0;
+    padding: 0;
+  }
 
-    .cat:nth-child(3) {
-        display: none;
-    }
+  .cat:nth-child(3) {
+    display: none;
+  }
 
-    .esquerda, .direita { margin: 0 10px; }
+  .esquerda,
+  .direita {
+    margin: 0 10px;
+  }
 }
