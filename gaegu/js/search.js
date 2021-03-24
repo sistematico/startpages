@@ -43,7 +43,7 @@
             'input-archwiki-d'
         );
         
-        if (localStorage.getItem('theme') === 'dark') {
+        if (localStorage.theme === 'dark') {
             input.classList.add('input-' + provider.name.toLowerCase() + '-d');
         } else {
             input.classList.add('input-' + provider.name.toLowerCase());
