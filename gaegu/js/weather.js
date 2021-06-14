@@ -1,7 +1,7 @@
 const weather = document.getElementById("weather")
 weather.innerHTML = '<a href="index.html?c=1">Clima</a>'
 
-function getLocation() {
+const getLocation = () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
@@ -9,7 +9,7 @@ function getLocation() {
   }
 }
 
-function showPosition(position) {
+const showPosition = (position) => {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
 
