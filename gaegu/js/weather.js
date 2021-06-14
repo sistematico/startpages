@@ -1,5 +1,5 @@
 const weather = document.getElementById("weather")
-weather.innerHTML = 'Clima desativado'
+weather.innerHTML = '<a href="index.html?c=1">Clima</a>'
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -16,7 +16,7 @@ function showPosition(position) {
   fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=3dedab9a1e2b6e1cb120ae2f421b477d`).then(function (response) {
     return response.json();
   }).then(function (json) {
-    document.getElementById('weather').innerHTML = json.main.temp + '°C';
+    document.getElementById('weather').innerHTML = '<a href="index.html">' + json.main.temp + '°C</a>';
   });
   
   //console.info("Latitude: " + position.coords.latitude);
