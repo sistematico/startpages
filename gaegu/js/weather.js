@@ -22,4 +22,8 @@ function showPosition(position) {
   //console.info("Latitude: " + position.coords.longitude);
 }
 
-getLocation();
+var url = new URL(window.location.href);
+var c = url.searchParams.get("c");
+console.log(c)
+
+//getLocation();
