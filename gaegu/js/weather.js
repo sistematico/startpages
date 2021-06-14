@@ -1,4 +1,5 @@
-const weather = document.getElementById("weather");
+const weather = document.getElementById("weather")
+weather.innerHTML = 'Clima desativado'
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -22,8 +23,7 @@ function showPosition(position) {
   //console.info("Latitude: " + position.coords.longitude);
 }
 
-var url = new URL(window.location.href);
-var c = url.searchParams.get("c");
-console.log(c)
-
-//getLocation();
+let c = new URL(window.location.href).searchParams.get("c")
+if (c !== null && c == 1) {
+  getLocation()
+}
