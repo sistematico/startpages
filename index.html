@@ -17,6 +17,13 @@
             margin: 0;
         }
 
+        .grid {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns:
+            repeat(auto-fit, minmax(150px, 1fr));
+        }
+
         .container {
             display: flex;
             justify-content: center;
@@ -42,10 +49,12 @@
 </head>
 <body>
     <div class="container">
-        <a href="bento/"><img src="thumb-bento.png" class="responsive" /></a>
-        <a href="evening/"><img src="thumb-evening.png" class="responsive" /></a>
-        <a href="gaegu/"><img src="thumb-gaegu.png" class="responsive" /></a>
-        <a href="dracula/"><img src="thumb-dracula.png" class="responsive" /></a>
+        <div class="grid">
+            <a href="bento/"><img src="thumb-bento.png" class="responsive" /></a>
+            <a href="evening/"><img src="thumb-evening.png" class="responsive" /></a>
+            <a href="gaegu/"><img src="thumb-gaegu.png" class="responsive" /></a>
+            <a href="dracula/"><img src="thumb-dracula.png" class="responsive" /></a>
+        </div>
     </div>
 </body>
 </html>
