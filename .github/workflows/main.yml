@@ -17,4 +17,3 @@ jobs:
           rm -rf /var/www/startpages.lucasbrum.net
           git clone git@github.com:sistematico/startpages.git /var/www/startpages.lucasbrum.net
           cd /var/www/startpages.lucasbrum.net
-          #git pull
