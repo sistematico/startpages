@@ -8,8 +8,6 @@ CONFIG.showKeys = localStorage.getItem('showKeysCookie') ?
   JSON.parse(localStorage.getItem('showKeysCookie')) :
   CONFIG.showKeys;
 
-
-
 const queryParser = new QueryParser({
   commands: CONFIG.commands,
   pathDelimiter: CONFIG.pathDelimiter,

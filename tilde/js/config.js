@@ -13,8 +13,8 @@ const CONFIG = {
       search: '/?q={}'
     },
     {
-      category: 'General',
-      name: 'Mail',
+      category: 'Geral',
+      name: 'Gmail',
       key: 'm',
       url: 'https://gmail.com',
       search: '/#search/text={}',
@@ -23,7 +23,7 @@ const CONFIG = {
       quickLaunch: true,
     },
     {
-      category: 'General',
+      category: 'Geral',
       name: 'Drive',
       key: 'd',
       url: 'https://drive.google.com',
@@ -33,16 +33,7 @@ const CONFIG = {
       quickLaunch: false,
     },
     {
-      category: 'General',
-      name: 'Telegram',
-      key: 'tg',
-      url: 'https://web.telegram.org',
-      color: '#5682a3',
-      icon: 'telegram',
-      quickLaunch: false,
-    },
-    {
-      category: 'General',
+      category: 'Geral',
       name: 'WhatsApp',
       key: 'w',
       url: 'https://web.whatsapp.com',
@@ -51,18 +42,17 @@ const CONFIG = {
       quickLaunch: false,
     },
     {
-      category: 'General',
-      name: 'Discord',
-      key: 'dc',
-      url: 'https://discord.com/app',
-      color: '#7289da',
-      icon: 'discord',
+      category: 'Geral',
+      name: 'Netflix',
+      key: 'n',
+      url: 'https://www.netflix.com',
+      color: 'linear-gradient(135deg, #E50914, #CB020C)',
+      icon: 'netflix',
       quickLaunch: false,
     },
 
-
     {
-      category: 'Programming',
+      category: 'Programação',
       name: 'GitHub',
       key: 'g',
       url: 'https://github.com',
@@ -72,7 +62,7 @@ const CONFIG = {
       quickLaunch: true,
     },
     {
-      category: 'Programming',
+      category: 'Programação',
       name: 'StackOverflow',
       key: 'st',
       url: 'https://stackoverflow.com',
@@ -82,7 +72,7 @@ const CONFIG = {
       quickLaunch: true,
     },
     {
-      category: 'Programming',
+      category: 'Programação',
       name: 'HackerNews',
       key: 'h',
       url: 'https://news.ycombinator.com/',
@@ -92,7 +82,7 @@ const CONFIG = {
       quickLaunch: true,
     },
     {
-      category: 'Programming',
+      category: 'Programação',
       name: 'MDN',
       key: 'md',
       url: 'https://developer.mozilla.org/en-US',
@@ -101,8 +91,37 @@ const CONFIG = {
       icon: 'mdn',
       quickLaunch: false,
     },
+
     {
-      category: 'Programming',
+      category: 'Util',
+      name: 'Notion',
+      key: 'ns',
+      url: 'https://www.notion.so',
+      color: 'linear-gradient(135deg, #FFF, #3F3F3F)',
+      icon: 'notion',
+      quickLaunch: true,
+    },
+    {
+      category: 'Util',
+      name: 'Translate',
+      key: 'tr',
+      url: 'https://translate.google.com/',
+      search: '/#view=home&op=translate&sl=auto&tl=en&text={}',
+      color: '#1a73e8',
+      icon: 'translate',
+      quickLaunch: false,
+    },
+    {
+      category: 'Util',
+      name: 'Icones',
+      key: 'ic',
+      url: 'https://icones.netlify.app',
+      color: '#1a73e8',
+      icon: 'emoji',
+      quickLaunch: false,
+    },
+    {
+      category: 'Util',
       name: 'DevDocs',
       key: 'dd',
       url: 'https://devdocs.io',
@@ -111,60 +130,18 @@ const CONFIG = {
       quickLaunch: false,
     },
 
-
     {
-      category: 'Fun',
-      name: 'YouTube',
-      key: 'y',
-      url: 'https://youtube.com',
-      search: '/results?search_query={}',
-      color: 'linear-gradient(135deg, #cd201f, #cd4c1f)',
-      icon: 'youtube',
-      quickLaunch: false,
+      category: 'Social',
+      name: 'Facebook',
+      key: 'fb',
+      url: 'https://www.facebook.com',
+      search: '/search?q={}&src=typed_query',
+      color: 'linear-gradient(135deg, #1DA1F2, #19608F)',
+      icon: 'facebook',
+      quickLaunch: true,
     },
     {
-      category: 'Fun',
-      name: 'Reddit',
-      key: 'r',
-      url: 'https://reddit.com',
-      search: '/search?q={}',
-      color: 'linear-gradient(135deg, #FF8456, #FF4500)',
-      icon: 'reddit',
-      quickLaunch: false,
-    },
-    {
-      category: 'Fun',
-      name: 'Netflix',
-      key: 'n',
-      url: 'https://www.netflix.com',
-      color: 'linear-gradient(135deg, #E50914, #CB020C)',
-      icon: 'netflix',
-      quickLaunch: false,
-    },
-    {
-      category: 'Fun',
-      name: 'Spotify',
-      key: 's',
-      url: 'https://open.spotify.com/',
-      search: '/search/{}',
-      color: '#1dd35e',
-      icon: 'spotify',
-      quickLaunch: false,
-    },
-    {
-      category: 'Fun',
-      name: 'Twitch',
-      key: 'tw',
-      url: 'https://www.twitch.tv',
-      search: '/directory/game/{}',
-      color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'twitch',
-      quickLaunch: false,
-    },
-
-
-    {
-      category: 'Other',
+      category: 'Social',
       name: 'Twitter',
       key: 't',
       url: 'https://www.twitter.com',
@@ -174,7 +151,7 @@ const CONFIG = {
       quickLaunch: true,
     },
     {
-      category: 'Other',
+      category: 'Social',
       name: 'Instagram',
       key: 'i',
       url: 'https://www.instagram.com',
@@ -183,7 +160,7 @@ const CONFIG = {
       quickLaunch: true,
     },
     {
-      category: 'Other',
+      category: 'Social',
       name: 'LinkedIn',
       key: 'l',
       url: 'https://linkedin.com',
@@ -193,22 +170,43 @@ const CONFIG = {
       quickLaunch: true,
     },
     {
-      category: 'Other',
-      name: 'Notion',
-      key: 'ns',
-      url: 'https://www.notion.so',
-      color: 'linear-gradient(135deg, #FFF, #3F3F3F)',
-      icon: 'notion',
-      quickLaunch: true,
+      category: 'Social',
+      name: 'Reddit',
+      key: 'r',
+      url: 'https://reddit.com',
+      search: '/search?q={}',
+      color: 'linear-gradient(135deg, #FF8456, #FF4500)',
+      icon: 'reddit',
+      quickLaunch: false,
+    },
+
+    {
+      category: 'Videos',
+      name: 'YouTube',
+      key: 'y',
+      url: 'https://youtube.com',
+      search: '/results?search_query={}',
+      color: 'linear-gradient(135deg, #cd201f, #cd4c1f)',
+      icon: 'youtube',
+      quickLaunch: false,
     },
     {
-      category: 'Other',
-      name: 'Translate',
-      key: 'tr',
-      url: 'https://translate.google.com/',
-      search: '/#view=home&op=translate&sl=auto&tl=en&text={}',
+      category: 'Videos',
+      name: 'Laracasts',
+      key: 'lc',
+      url: 'https://laracasts.com',
       color: '#1a73e8',
-      icon: 'translate',
+      icon: 'laravel',
+      quickLaunch: false,
+    },
+    {
+      category: 'Videos',
+      name: 'Twitch',
+      key: 'tw',
+      url: 'https://www.twitch.tv',
+      search: '/directory/game/{}',
+      color: 'linear-gradient(135deg, #6441a5, #4b367c)',
+      icon: 'twitch',
       quickLaunch: false,
     },
   ],
@@ -263,7 +261,7 @@ const CONFIG = {
   /**
    * Open triggered queries in a new tab.
    */
-  newTab: false,
+  newTab: true,
 
   /**
    * Dynamic overlay background colors when command domains are matched.
@@ -295,7 +293,7 @@ const CONFIG = {
   /**
    * The delimiter between the hours and minutes on the clock.
    */
-  clockDelimiter: ' ',
+  clockDelimiter: ':',
 
   /**
    * Show a twenty-four-hour clock instead of a twelve-hour clock with AM/PM.
