@@ -6,11 +6,22 @@ const CONFIG = {
    * Commands without a category don't show up in the help menu.
    * Update line 11 and 13 if you prefer using Google.
    */
-  commands: [{
+  commands: [
+    {
       name: 'Duckduckgo',
       key: '*',
       url: 'https://duckduckgo.com',
       search: '/?q={}'
+    },
+    {
+      category: 'Geral',
+      name: 'Google',
+      key: 'g',
+      url: 'https://www.google.com.br',
+      search: '/?q={}',
+      color: 'linear-gradient(135deg, #dd5145, #dd5145)',
+      icon: 'google',
+      quickLaunch: true,
     },
     {
       category: 'Geral',
@@ -25,7 +36,7 @@ const CONFIG = {
     {
       category: 'Geral',
       name: 'Drive',
-      key: 'd',
+      key: 'dr',
       url: 'https://drive.google.com',
       search: '/drive/search?q={}',
       color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
@@ -54,7 +65,7 @@ const CONFIG = {
     {
       category: 'Programação',
       name: 'GitHub',
-      key: 'g',
+      key: 'gh',
       url: 'https://github.com',
       search: '/search?q={}',
       color: 'linear-gradient(135deg, #2b2b2b, #3b3b3b)',
