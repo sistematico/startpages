@@ -1,10 +1,11 @@
 @font-face {
   font-family: "Gilroy SemiBold";
-  src: url("Gilroy-SemiBold.otf") format("opentype");
+  src: url("fonts/Gilroy-SemiBold.otf") format("opentype");
 }
+
 @font-face {
   font-family: "Gilroy Medium";
-  src: url("Gilroy-Medium.otf") format("opentype");
+  src: url("fonts/Gilroy-Medium.otf") format("opentype");
 }
 
 body {
@@ -46,23 +47,11 @@ a {
   position: relative;
   background: #191919ee;
   height: 130px;
-  width: 980px;
+  width: 800px;
   margin: auto;
   margin-top: 150px;
   border-radius: 8px;
   box-shadow: 0px 2px 2px;
-}
-
-#bottom {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-}
-
-.pad-left,
-.pad-right {
-  padding-left: 1em;
 }
 
 .top-left {
@@ -76,10 +65,22 @@ a {
 }
 
 .top-right {
-  max-width: 600px;
+  max-width: 460px;
   float: left;
   height: 100%;
   padding-left: 320px;
+}
+
+#bottom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.pad-left,
+.pad-right {
+  padding-left: 1em;
 }
 
 #links {
