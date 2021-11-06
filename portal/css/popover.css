@@ -1,0 +1,77 @@
+/* popover */
+summary {
+  margin-right: 18px;
+  color: #f7f7f7;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  text-align: right;
+}
+
+details[data-popover] {
+  display: inline;
+  position: relative;
+}
+
+details[data-popover] > summary:focus {
+  outline: none;
+}
+
+details[data-popover] > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[data-popover] > summary {
+  list-style: none;
+  /* text-decoration: underline dotted teal; */
+  text-decoration: none;
+}
+
+details[data-popover] > summary + * {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  width: 150%;
+
+  padding: 10px;
+
+
+  background: #191919ee;
+  border-radius: 8px;
+  border: 2px solid #191919;
+  box-shadow: 0px 2px 2px;
+}
+
+details[data-popover] > * + * {
+  /* hide detail elements that would ruin the popover */
+  display: none;
+}
+
+details[data-popover="up"] > summary + * {
+  bottom: calc(0.5rem + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+
+details[data-popover="down"] > summary + * {
+  top: calc(0.5rem + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+
+details[data-popover="left"] > summary + * {
+  right: calc(1rem + 100%);
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+details[data-popover="right"] > summary + * {
+  left: calc(1rem + 100%);
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+/* wrapper setup */
+.wrapper {
+  width: 100%;
+  padding: 250px;
+}
