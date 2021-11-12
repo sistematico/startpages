@@ -63,6 +63,14 @@ a > span:after {
   justify-items: stretch;
 }
 
+.left {
+  justify-self: start;
+}
+
+.right {
+  justify-self: end;
+}
+
 .octicon-mark-github {
   color: #fff;
 }
