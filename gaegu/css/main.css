@@ -59,21 +59,16 @@ a > span:after {
 
 .top {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template: 100% / 1fr 1fr;
   justify-items: stretch;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
   border: 2px solid red;
 }
 
-.left {
+.top.left {
   justify-self: start;
 }
 
-.right {
+.top.right {
   justify-self: end;
 }
 
