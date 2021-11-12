@@ -61,6 +61,9 @@ a > span:after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: stretch;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 .left {
