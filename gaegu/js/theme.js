@@ -3,6 +3,7 @@ const logo = document.getElementById("logo");
 const icon = document.getElementById("icon");
 const github = document.querySelector(".octicon-mark-github");
 let theme = 'light';
+github.style.fill = 'black'
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);

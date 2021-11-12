@@ -26,6 +26,7 @@ body {
     text-shadow: 1px 1px 2px var(--shadow-color);
 }
 
+svg,
 h1,
 h2,
 h3,
@@ -44,6 +45,13 @@ input {
 textarea:focus,
 input:focus {
     border-bottom: 4px solid var(--input-color);
+}
+
+select {
+    color: var(--font-color);
+    border: 4px solid var(--border-color);
+    text-shadow: 1px 1px 2px var(--shadow-color);
+    background: none;
 }
 
 ::placeholder {
