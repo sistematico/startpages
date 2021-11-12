@@ -12,6 +12,7 @@ if (currentTheme) {
         logo.classList.add("invert");
         icon.src = "img/sun.svg";
         github.style.fill = 'white'
+        //obj[i].style.backgroundColor = color;
     }
 }
 
@@ -23,6 +24,7 @@ function switchTheme() {
         logo.classList.add("invert");
         icon.src = "img/sun.svg";
         github.style.fill = 'white'
+        //obj[i].style.backgroundColor = color;
     } else {
         theme = 'light';
         document.documentElement.setAttribute('data-theme', 'light');
@@ -30,6 +32,7 @@ function switchTheme() {
         logo.classList.remove("invert");
         icon.src = "img/moon.svg";
         github.style.fill = 'black'
+        //obj[i].style.backgroundColor = color;
     }    
 }
 
