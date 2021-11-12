@@ -64,11 +64,11 @@ a > span:after {
   padding: 10px;
 }
 
-.top.left {
+.left {
   justify-self: start;
 }
 
-.top.right {
+.right {
   justify-self: end;
 }
 
