@@ -7,6 +7,7 @@
   --border-color: #ddd;
   --shadow-color: #888;
   --input-color: #4d79ff;
+  --popup-bg: #e5e5e5;
 }
 
 [data-theme="dark"] {
@@ -18,12 +19,13 @@
   --border-color: #222;
   --shadow-color: #222;
   --input-color: #ff79c6;
+  --popup-bg: #2b2b2b;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--font-color);
-    text-shadow: 1px 1px 2px var(--shadow-color);
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  text-shadow: 1px 1px 2px var(--shadow-color);
 }
 
 svg,
@@ -33,40 +35,49 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--heading-color);
+  color: var(--heading-color);
 }
 
 input {
-    color: var(--font-color);
-    border-bottom: 4px solid var(--border-color);
-    text-shadow: 1px 1px 2px var(--shadow-color);
+  color: var(--font-color);
+  border-bottom: 4px solid var(--border-color);
+  text-shadow: 1px 1px 2px var(--shadow-color);
 }
 
 textarea:focus,
 input:focus {
-    border-bottom: 4px solid var(--input-color);
+  border-bottom: 4px solid var(--input-color);
 }
 
 select {
-    color: var(--font-color);
-    border: 4px solid var(--border-color);
-    text-shadow: 1px 1px 2px var(--shadow-color);
-    background: none;
+  color: var(--font-color);
+  border: 4px solid var(--border-color);
+  text-shadow: 1px 1px 2px var(--shadow-color);
+  background: none;
 }
 
 ::placeholder {
-    color: var(--primary-color);
-    text-shadow: 1px 1px 2px var(--shadow-color);
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px var(--shadow-color);
 }
 
-a,a>span {
-    color: var(--primary-color);
+a,
+a > span {
+  color: var(--primary-color);
 }
 
 a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .effect:before {
-    background: var(--input-color);
+  background: var(--input-color);
+}
+
+#popup {
+  background: var(--popup-bg);
+}
+
+.octicon-mark-github {
+  fill: var(--primary-color);
 }
