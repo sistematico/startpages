@@ -17,6 +17,21 @@ jobs:
         source: "."
         target: ${{ secrets.PROJECT_PATH }}
 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Building Laravel Site
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        password: ${{ secrets.SSH_PASS }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          cd ${{ secrets.PROJECT_PATH }}
+          git reset --hard
+          git pull origin main
+
 # jobs:
 #   deploy:
 #     runs-on: ubuntu-latest
