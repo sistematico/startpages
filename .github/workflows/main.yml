@@ -6,14 +6,29 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy HTML Site
-      uses: appleboy/ssh-action@master
+    - uses: actions/checkout@v2
+    - name: Copy repository contents via scp
+      uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        password: ${{ secrets.SSH_PASSWORD }}
+        username: ${{ secrets.SSH_USER }}
+        password: ${{ secrets.SSH_PASS }}
         port: ${{ secrets.SSH_PORT }}
-        script: |
-          rm -rf /var/www/startpages.lucasbrum.net
-          git clone git@github.com:sistematico/startpages.git /var/www/startpages.lucasbrum.net
-          cd /var/www/startpages.lucasbrum.net
+        source: "."
+        target: ${{ secrets.PROJECT_PATH }}
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Deploy HTML Site
+#       uses: appleboy/ssh-action@master
+#       with:
+#         host: ${{ secrets.SSH_HOST }}
+#         username: ${{ secrets.SSH_USERNAME }}
+#         password: ${{ secrets.SSH_PASSWORD }}
+#         port: ${{ secrets.SSH_PORT }}
+#         script: |
+#           rm -rf /var/www/startpages.lucasbrum.net
+#           git clone git@github.com:sistematico/startpages.git /var/www/startpages.lucasbrum.net
+#           cd /var/www/startpages.lucasbrum.net
