@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Building Laravel Site
+    - name: Building Site
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
@@ -31,19 +31,3 @@ jobs:
           cd ${{ secrets.PROJECT_PATH }}
           git reset --hard
           git pull origin main
-
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: Deploy HTML Site
-#       uses: appleboy/ssh-action@master
-#       with:
-#         host: ${{ secrets.SSH_HOST }}
-#         username: ${{ secrets.SSH_USERNAME }}
-#         password: ${{ secrets.SSH_PASSWORD }}
-#         port: ${{ secrets.SSH_PORT }}
-#         script: |
-#           rm -rf /var/www/startpages.lucasbrum.net
-#           git clone git@github.com:sistematico/startpages.git /var/www/startpages.lucasbrum.net
-#           cd /var/www/startpages.lucasbrum.net
