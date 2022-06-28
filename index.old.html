@@ -7,12 +7,6 @@
     <title>StartPages</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <style>
-        *,
-        *:before,
-        *:after {
-          box-sizing: border-box;
-        }
-
         html, body {
             min-height: 100vh;
             margin: 0;
@@ -24,30 +18,25 @@
             justify-content: center;
             align-items: center;
         }
-        
-        .wrapper {
+
+        .container {
             display: grid;
-            grid-gap: 10px;
+            /* grid-template-rows: repeat(1, minmax(300px, min-content)); */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-auto-rows: 250px;
+            gap: .5rem;
+            width: 100%;
+            text-align: center;
         }
-        
-        .grid-container--fill {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        }
-        
-        .grid-container--fit {
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        }
-        
-        /* .wrapper div a img { */
-        img { 
+
+        .container div a img {
             width: 300px;
             height: auto;
-        } 
-
+        }
     </style>
 </head>
 <body>
-    <div class="wrapper grid-container--fit">
+    <div class="container">
         <div>
             <a href="bento/">
                 <img src="assets/img/thumbnails/thumb-bento.png" />
