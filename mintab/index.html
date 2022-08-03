@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MinTab: an elegant, minimal startpage">
+    <meta name="author" content"github.com/lr-tech">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MinTab</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/popover.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script defer src="assets/config.js"></script>
+    <script defer src="assets/js/setDate.js"></script>
+    <script defer src="assets/js/setLinks.js"></script>
+    <script defer src="assets/js/setQuote.js"></script>
+  </head>
+  <body>
+    <div id="topContainer" class="container bigContainer"></div>
+    <div id="middleContainer" class="container bigContainer">
+      <div class="container" id="iconsContainer"></div>
+      <div class="container" id="infoContainer">
+        <p id="currentTime"></p>
+        <p id="currentDate"></p>
+        <p id="quote"></p>
+        <p id="quoteAuthor"></p>
+      </div>
+    </div>
+    <div id="bottomContainer" class="container bigContainer">
+      <div id="listContainer" class="container"></div>
+
+      <!-- <details data-popover="up">
+        <summary>Popovers</summary>
+        <div>
+          <p>Popovers are a popular UI element similar to tooltips but supporting much more content than a tooltip usually does.</p>
+          <p>Their content is also usually selectable/interactive to the user where tooltip content is usually not.</p>
+        </div>
+        <p>hidden content is hidden</p>
+      </details> -->
+
+    </div>
+  </body>
+</html>
