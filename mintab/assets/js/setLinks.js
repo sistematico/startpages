@@ -18,19 +18,19 @@ const printListItems = () => {
   let currentItem = null;
 
   for (const listItem of LIST_ITEMS) {
-    if (typeof listItem.popover === 'object') {
+    if (typeof listItem.sublink === 'object') {
       currentItem = document.createElement("details");
       currentItem.dataset.popover = "up";
       
       let summary = document.createElement("summary");      
       let div = document.createElement("div");
       
-      for (const key in listItem.popover) {
+      for (const key in listItem.sublink) {
         let p = document.createElement("p");
         let link = document.createElement("a");
 
-        link.href = listItem['popover'][key].link;
-        link.appendChild(document.createTextNode(listItem['popover'][key].name));
+        link.href = listItem['sublink'][key].link;
+        link.appendChild(document.createTextNode(listItem['sublink'][key].name));
 
         p.appendChild(link);
         div.appendChild(p);

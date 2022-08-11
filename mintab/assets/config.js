@@ -27,24 +27,49 @@ const ICONS = [
 
 const LIST_ITEMS = [
   {
+    name: "code",
+    sublink: [
+      { name: "Repos", link: "https://github.com/sistematico?tab=repositories" },
+      { name: "Gists", link: "https://gist.github.com/sistematico" }
+    ]
+  },
+  {
+    name: "laracasts",
+    link: "https://laracasts.com"
+  },
+  {
     name: "laravel",
-    link: "https://laravel.com/docs/9.x"
+    sublink: [
+      { name: "Docs", link: "https://laravel.com/docs/9.x" },
+      { name: "Laravel Vite", link: "https://laravel-vite.dev" },
+      { name: "Awesome Laravel", link: "https://github.com/chiraggude/awesome-laravel" }
+    ]
   },
   {
     name: "vuejs",
-    link: "https://vuejs.org/guide/introduction.html"
+    sublink: [
+      { name: "Guide", link: "https://vuejs.org/guide/introduction.html" },
+      { name: "Awesome Vue", link: "https://github.com/vuejs/awesome-vue" }
+    ]
   },
   {
     name: "vitejs",
-    link: "https://vitejs.dev/guide"
+    sublink: [
+      { name: "Guide", link: "https://vitejs.dev/guide" },
+      { name: "Awesome Vite", link: "https://github.com/vitejs/awesome-vite" }
+    ]
+  },
+  {
+    name: "javascript",
+    sublink: [
+      { name: "Awesome JavaScript", link: "https://github.com/sorrycc/awesome-javascript" }
+    ]
   },
   {
     name: "typescript",
-    link: "https://www.typescriptlang.org/docs/handbook/intro.html",
-    popover: [
-      { name: "Google", link: "https://google.com" },
-      { name: "Facebook", link: "https://facebook.com" },
-      { name: "Twitter", link: "https://twitter.com" }
+    sublink: [
+      { name: "Handbook", link: "https://www.typescriptlang.org/docs/handbook/intro.html" },
+      { name: "Awesome TypeScript", link: "https://github.com/dzharii/awesome-typescript" }
     ]
   }
 ]

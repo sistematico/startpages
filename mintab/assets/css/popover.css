@@ -1,4 +1,7 @@
-/* popover */
+details div {
+    font-size: .88rem;
+}
+
 details[data-popover] {
     display: inline;
     position: relative;
@@ -24,16 +27,15 @@ details[data-popover]>summary {
 
 details[data-popover]>summary+* {
     position: absolute;
-    display: block;
+    display: inline-block;
     z-index: 1;
-    width: 150%;
     border: solid 2px #141619;
     padding: 10px;
     background: #282c33;
+    white-space: nowrap;
 }
 
 details[data-popover]>*+* {
-    /* hide detail elements that would ruin the popover */
     display: none;
 }
 
