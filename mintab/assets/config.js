@@ -35,7 +35,12 @@ const LIST_ITEMS = [
   },
   {
     name: "laracasts",
-    link: "https://laracasts.com"
+    // link: "https://laracasts.com"
+    sublink: [
+      { name: "Laracasts", link: "https://laracasts.com" },
+      { name: "Larabits", link: "https://laracasts.com/bits" },
+      { name: "Youtube", link: "https://www.youtube.com/c/Laracastsofficial" }
+    ]
   },
   {
     name: "laravel",
@@ -71,5 +76,13 @@ const LIST_ITEMS = [
       { name: "Handbook", link: "https://www.typescriptlang.org/docs/handbook/intro.html" },
       { name: "Awesome TypeScript", link: "https://github.com/dzharii/awesome-typescript" }
     ]
+  },
+  {
+    name: "podman",
+    sublink: [
+      { name: "Docs", link: "https://docs.podman.io" },
+      { name: "Basic Use", link: "https://github.com/containers/podman/blob/main/docs/tutorials/podman_tutorial.md" }
+    ]
   }
+
 ]
