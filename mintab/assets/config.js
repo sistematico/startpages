@@ -83,6 +83,12 @@ const LIST_ITEMS = [
       { name: "Docs", link: "https://docs.podman.io" },
       { name: "Basic Use", link: "https://github.com/containers/podman/blob/main/docs/tutorials/podman_tutorial.md" }
     ]
+  },
+  {
+    name: "wordpress",
+    sublink: [
+      { name: "WordPress", link: "https://wordpress.org" },
+      { name: "WP-CLI HandBook", link: "https://make.wordpress.org/cli/handbook/how-to-install" }
+    ]
   }
-
 ]
