@@ -47,6 +47,7 @@ const LIST_ITEMS = [
     sublink: [
       { name: "Docs", link: "https://laravel.com/docs/9.x" },
       { name: "Laravel Vite", link: "https://laravel-vite.dev" },
+      { name: "Laravel Examples", link: "https://laravelexamples.com" },
       { name: "Awesome Laravel", link: "https://github.com/chiraggude/awesome-laravel" }
     ]
   },
