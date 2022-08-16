@@ -30,4 +30,5 @@ jobs:
         script: |
           cd ${{ secrets.PROJECT_PATH }}
           git reset --hard
-          git pull origin main
+          git clean -fxd
+          git pull -u origin main

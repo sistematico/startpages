@@ -34,6 +34,13 @@ const LIST_ITEMS = [
     ]
   },
   {
+    name: "tools",
+    sublink: [
+      { name: "Favicon", link: "https://favicon.io" },
+      { name: "Hero Icons", link: "https://heroicons.com" }
+    ]
+  },
+  {
     name: "laracasts",
     // link: "https://laracasts.com"
     sublink: [
