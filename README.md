@@ -2,6 +2,13 @@
 
 Uma coleção de startpages do subbreddit [/r/startpages](https://reddit.com/r/startpages)
 
+
+<p align='center'>
+  <a href='https://github.com/sistematico/startpages/actions/workflows/cd.yml'>
+    <img src='https://github.com/sistematico/startpages/actions/workflows/cd.yml/badge.svg' alt='Continuous Delivery' height='20' />
+  </a>
+</p>
+
 ## Demo
 
 - [https://startpages.lucasbrum.net](https://startpages.lucasbrum.net)
