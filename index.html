@@ -19,23 +19,26 @@
         }
 
         body {
+            display: grid;
+            place-items: center;
             background-color: #282a36;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         
         .wrapper {
             display: grid;
-            grid-gap: 10px;
+            place-items: center;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+            width: 100vw;
+            padding: 0 25px;
         }
         
         .grid-container--fill {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 10fr));
         }
         
         .grid-container--fit {
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 10fr));
         }
         
         /* .wrapper div a img { */
@@ -47,7 +50,7 @@
     </style>
 </head>
 <body>
-    <div class="wrapper grid-container--fit">
+    <div class="wrapper">
         <div>
             <a href="bento/">
                 <img src="assets/img/thumbnails/thumb-bento.png" />
