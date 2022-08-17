@@ -27,6 +27,14 @@ const ICONS = [
 
 const LIST_ITEMS = [
   {
+    name: "suckless",
+    sublink: [
+      { name: "dwm", link: "https://dwm.suckless.org" },
+      { name: "st", link: "https://st.suckless.org" },
+      { name: "dmenu", link: "https://suckless.org" },
+    ]
+  },
+  {
     name: "code",
     sublink: [
       { name: "Repos", link: "https://github.com/sistematico?tab=repositories" },
