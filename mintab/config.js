@@ -33,7 +33,8 @@ const LIST_ITEMS = [
       { name: "st", link: "https://st.suckless.org" },
       { name: "dmenu", link: "https://tools.suckless.org/dmenu" },
       { name: "slock", link: "https://tools.suckless.org/slock" },
-      { name: "surf", link: "https://surf.suckless.org" }
+      { name: "surf", link: "https://surf.suckless.org" },
+      { name: "Surf Demystified", link: "http://troubleshooters.com/linux/surf.htm" }
     ]
   },
   {
