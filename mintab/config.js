@@ -31,7 +31,8 @@ const LIST_ITEMS = [
     sublink: [
       { name: "dwm", link: "https://dwm.suckless.org" },
       { name: "st", link: "https://st.suckless.org" },
-      { name: "dmenu", link: "https://suckless.org" },
+      { name: "dmenu", link: "https://tools.suckless.org/dmenu" },
+      { name: "slock", link: "https://tools.suckless.org/slock" }      
     ]
   },
   {
