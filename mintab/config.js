@@ -34,7 +34,8 @@ const LIST_ITEMS = [
       { name: "dmenu", link: "https://tools.suckless.org/dmenu" },
       { name: "slock", link: "https://tools.suckless.org/slock" },
       { name: "surf", link: "https://surf.suckless.org" },
-      { name: "Surf Demystified", link: "http://troubleshooters.com/linux/surf.htm" }
+      { name: "Surf Demystified", link: "http://troubleshooters.com/linux/surf.htm" },
+      { name: "ii", link: "https://tools.suckless.org/ii" }
     ]
   },
   {

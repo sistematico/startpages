@@ -23,7 +23,12 @@ const showPosition = (position) => {
   //console.info("Latitude: " + position.coords.longitude);
 }
 
-let c = new URL(window.location.href).searchParams.get("c")
-if (c !== null && c == 1) {
-  getLocation()
+if (window.location.protocol != 'file:') {
+  let c = new URL(window.location.href).searchParams.get("c");
+
+  if (c !== null && c == 1) {
+    getLocation()
+  }
+} else {
+  weather.parentNode.remove(weather.parentNode);
 }

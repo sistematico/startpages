@@ -2,6 +2,8 @@ const title = document.getElementById("code-title")
 const placeholder = document.getElementById("code")
 const select = document.getElementById("snippets")
 
+if (window.location.protocol != 'file:') {
+
 fetch('json/snippets.json')
   .then(res => res.json())
   .then(json => {
@@ -13,20 +15,27 @@ fetch('json/snippets.json')
   })
   .catch(err => console.log(err))
 
-function snippet() {
-  let sn = select.value;
+} else {
 
-  fetch('json/snippets.json')
-    .then(res => res.json())
-    .then(json => {
+  select.parentNode.remove();
+  title.parentNode.parentNode.innerHTML = "Use uma versão online.";
 
-      let s = json.filter((el,i)=>{
-        return el.name == sn ? el : false 
-      })
-
-      title.innerText = s != false ? s[0].description : ''
-      placeholder.innerText = s != false ? s[0].code : ''
-
-    })
-    .catch(err => console.log(err))
 }
+
+// function snippet() {
+//   let sn = select.value;
+
+//   fetch('json/snippets.json')
+//     .then(res => res.json())
+//     .then(json => {
+
+//       let s = json.filter((el,i)=>{
+//         return el.name == sn ? el : false 
+//       })
+
+//       title.innerText = s != false ? s[0].description : ''
+//       placeholder.innerText = s != false ? s[0].code : ''
+
+//     })
+//     .catch(err => console.log(err))
+// }
