@@ -1,11 +1,8 @@
 let t = new URL(window.location.href).searchParams.get("t")
 const currentTheme = localStorage.getItem('theme');
-// const logo = document.querySelectorAll(".slider-image");
 const logo = document.querySelector("#logo");
-const icon = document.getElementById("icon");
-// const github = document.querySelector(".octicon-mark-github");
+const icon = document.querySelector("#theme-icon");
 let theme = 'light';
-// github.style.fill = 'black'
 
 function removeURLParameter(url, parameter) {
     //prefer to use l.search if you have a location/link object
@@ -34,26 +31,14 @@ function switchTheme() {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
 
-        // logo.forEach(item => {
-        //     if (!item.classList.contains("invert")) {
-        //         item.classList.add("invert");
-        //     }
-        // })
-
         logo.classList.add("invert");
-        icon.src = "img/sun.svg";
+        icon.src = "assets/img/sun.svg";
      } else {
         theme = 'light';
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
-
-        // logo.forEach(item => {
-        //     if (item.classList.contains("invert")) {
-        //         item.classList.remove("invert");
-        //     }
-        // })
         logo.classList.remove("invert");
-        icon.src = "img/moon.svg";
+        icon.src = "assets/img/moon.svg";
      }    
 }
 
@@ -62,15 +47,8 @@ if (currentTheme) {
   
     if (currentTheme === 'dark') {
         theme = 'dark';
-
-        // logo.forEach(item => {
-        //     if (item.classList.contains("invert")) {
-        //         item.classList.remove("invert");
-        //     }
-        // })
-
         logo.classList.add("invert");
-        icon.src = "img/sun.svg";
+        icon.src = "assets/img/sun.svg";
     }
 } else if (t !== null) {
     theme = t

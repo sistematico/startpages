@@ -30,5 +30,5 @@ if (window.location.protocol != 'file:') {
     getLocation()
   }
 } else {
-  weather.parentNode.remove(weather.parentNode);
+  weather.remove();
 }
