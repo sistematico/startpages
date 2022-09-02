@@ -74,7 +74,7 @@ a:hover {
   background: var(--input-color);
 }
 
-#popup {
+.popup {
   background: var(--popup-bg);
 }
 
