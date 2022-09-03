@@ -1,19 +1,17 @@
-# StartPages
+# 🌎 StartPages
 
 Uma coleção de startpages do subbreddit [/r/startpages](https://reddit.com/r/startpages)
 
+### 🤖 CI/CD
 
-<p align='center'>
-  <a href='https://github.com/sistematico/startpages/actions/workflows/cd.yml'>
-    <img src='https://github.com/sistematico/startpages/actions/workflows/cd.yml/badge.svg' alt='Continuous Delivery' height='20' />
-  </a>
-</p>
+[![CD](https://github.com/sistematico/startpages/actions/workflows/pages.yml/badge.svg)](https://github.com/sistematico/startpages/actions/workflows/pages.yml)
 
-## Demo
+## 🏃 Demo
 
+- [https://sistematico.github.io/startpages](https://sistematico.github.io/startpages)
 - [https://startpages.lucasbrum.net](https://startpages.lucasbrum.net)
 
-## Ajude
+## 💰 Ajude
 
 Se esse repositório foi útil pra você de alguma maneira(eu espero que sim :grinning:) considere doar um valor simbólico ou me patrocinar para que eu possa ajudar sempre mais.
 
