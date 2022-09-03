@@ -108,6 +108,7 @@ input {
   text-align: center;
   border: 0;
   width: 70%;
+  caret-color: transparent;
 }
 
 .input-icon {
