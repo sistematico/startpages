@@ -1,10 +1,11 @@
 # 🌎 StartPages
 
-Uma coleção de startpages do subbreddit [/r/startpages](https://reddit.com/r/startpages)
+Handy crafted Startpages from [/r/startpages](https://reddit.com/r/startpages)
 
 ### 🤖 CI/CD
 
-[![CD](https://github.com/sistematico/startpages/actions/workflows/pages.yml/badge.svg)](https://github.com/sistematico/startpages/actions/workflows/pages.yml)
+[![Github Pages](https://github.com/sistematico/startpages/actions/workflows/pages.yml/badge.svg)](https://github.com/sistematico/startpages/actions/workflows/pages.yml)
+[![CD](https://github.com/sistematico/startpages/actions/workflows/cd.yml/badge.svg)](https://github.com/sistematico/startpages/actions/workflows/cd.yml)
 
 ## 🏃 Demo
 
