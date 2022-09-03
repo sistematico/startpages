@@ -15,7 +15,7 @@ if (window.location.protocol != 'file:') {
     .catch(err => console.log(err))
 } else {
   select.parentNode.remove();
-  title.parentNode.parentNode.innerHTML = "Use uma versão online.";
+  title.parentNode.parentNode.innerHTML = "offline version";
 }
 
 function snippet() {
