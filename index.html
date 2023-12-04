@@ -20,34 +20,33 @@
       body {
         min-height: 100vh;
         margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
       }
 
       body {
         font-family: 'Nunito', sans-serif;
-        display: grid;
-        place-items: center;
-        color: #fff;
         background-color: #282a36;
+        color: #fff;
+      }
+
+      .header,
+      .footer {
+        text-align: center;
+        margin: 10px 0;
       }
 
       .wrapper {
-        display: grid;
-        place-items: center;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1920px;
+        margin: 0 auto;
         gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        width: 100vw;
-        padding: 0 25px;
       }
 
-      .grid-container--fill {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 10fr));
-      }
-
-      .grid-container--fit {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 10fr));
-      }
-
-      /* .wrapper div a img { */
       img {
         width: 300px;
         height: auto;
@@ -59,7 +58,10 @@
     </style>
   </head>
   <body>
-    <h2>Handy crafted Startpages from <a href="https://reddit.com/r/startpages">/r/startpages</a> and <a href="https://github.com/search?q=startpage&type=repositories">Github</a></h2>
+    <div class="header">
+      <h2>Handy crafted Startpages from <a href="https://reddit.com/r/startpages">/r/startpages</a> and <a href="https://github.com/search?q=startpage&type=repositories">Github</a></h2>
+    </div>
+
     <div class="wrapper">
       <div>
         <a href="bento/">
@@ -127,10 +129,13 @@
         </a>
       </div>
     </div>
-    <p>
-      Collection picked with 💙 by <a href="https://lucasbrum.net" target="_blank">Lucas Saliés Brum</a>
-      <br />
-      Code on <a href="https://github.com/sistematico/startpages" target="_blank">Github</a>
-    </p>
+
+    <div class="footer">
+      <p>
+        Collection picked with 💙 by <a href="https://lucasbrum.net" target="_blank">Lucas Saliés Brum</a>
+        <br />
+        Code on <a href="https://github.com/sistematico/startpages" target="_blank">Github</a>
+      </p>
+    </div>
   </body>
 </html>
