@@ -9,11 +9,9 @@ const services = {
   }
 }
 let currentService = 'Google'
+document.getElementById('currentServiceIcon').src = services[currentService].icon
 
 document.getElementById('multiSearch').addEventListener('keydown', function (event) {
-  const input = this;
-  const iconElement = document.getElementById('currentServiceIcon')
-
   if (event.key === 'Enter') {
     const query = input.value;
     const searchUrl = services[currentService].url + encodeURIComponent(query)
@@ -28,8 +26,10 @@ document.getElementById('multiSearch').addEventListener('keydown', function (eve
     event.preventDefault()
     const servicesKeys = Object.keys(services)
     const currentServiceIndex = servicesKeys.indexOf(currentService)
+    
     currentService = servicesKeys[(currentServiceIndex + 1) % servicesKeys.length]
-    iconElement.innerHTML = services[currentService].icon
-    input.placeholder = currentService
+    
+    document.getElementById('currentServiceIcon').src = services[currentService].icon
+    this.placeholder = currentService
   }
 })

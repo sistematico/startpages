@@ -16,7 +16,7 @@ body {
 
 /* Search */
 input {
-  height: 47px;
+  height: 46px;
   width: 100%;
   background: #2e2e2e;
   box-shadow: none;
@@ -45,9 +45,9 @@ input:focus {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 8px;
-  width: 20px;
-  height: 20px;
+  left: 9px;
+  width: 21px;
+  height: 21px;
 }
 
 #multiSearch {
