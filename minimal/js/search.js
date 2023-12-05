@@ -10,8 +10,8 @@ const services = {
   'DuckDuckGo': { url: 'https://duckduckgo.com/?q=', icon: 'duckduckgo.svg' },
   'YouTube': { url: 'https://www.youtube.com/results', icon: 'youtube.svg' },
   'StackOverflow': { url: 'https://stackoverflow.com/search', icon: 'stackoverflow.svg' },
-  'Wikipedia': { url: 'https://en.wikipedia.org/w/index.php', icon: 'duckduckgo.svg' },
-  'Reddit': { url: 'https://reddit.com/search/', icon: 'duckduckgo.svg' },
+  'Wikipedia': { url: 'https://en.wikipedia.org/w/index.php', icon: 'wikipedia.svg' },
+  'Reddit': { url: 'https://reddit.com/search/', icon: 'reddit.svg' },
   'ArchWiki': { url: 'https://wiki.archlinux.org/index.php/', icon: 'archlinux.svg' },
   'X': { url: 'https://twitter.com/search', icon: 'x.svg' },
 }
