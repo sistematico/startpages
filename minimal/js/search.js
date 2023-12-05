@@ -1,3 +1,4 @@
+let currentService = 'Google'
 const services = {
   'Google': {
     url: 'https://www.google.com/search?q=',
@@ -5,18 +6,16 @@ const services = {
   },
   'DuckDuckGo': {
     url: 'https://duckduckgo.com/?q=',
-    icon: 'https://raw.githubusercontent.com/sistematico/startpages/main/minimal/img/ddg.svg'
+    icon: 'https://raw.githubusercontent.com/sistematico/startpages/main/minimal/img/duckduckgo.svg'
   }
 }
-let currentService = 'Google'
 document.getElementById('currentServiceIcon').src = services[currentService].icon
 
 document.getElementById('multiSearch').addEventListener('keydown', function (event) {
   if (event.key === 'Enter') {
-    const query = input.value;
+    const query = input.value
     const searchUrl = services[currentService].url + encodeURIComponent(query)
     const newWindow = window.open(searchUrl, '_blank')
-
     if (!newWindow) {
       alert('O bloqueador de pop-ups está ativado. Por favor, desative para continuar.')
     } else {
@@ -26,9 +25,7 @@ document.getElementById('multiSearch').addEventListener('keydown', function (eve
     event.preventDefault()
     const servicesKeys = Object.keys(services)
     const currentServiceIndex = servicesKeys.indexOf(currentService)
-    
     currentService = servicesKeys[(currentServiceIndex + 1) % servicesKeys.length]
-    
     document.getElementById('currentServiceIcon').src = services[currentService].icon
     this.placeholder = currentService
   }
