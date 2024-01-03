@@ -1,8 +1,6 @@
 @import url('fonts.css');
 
-* {
-  margin: 0;
-}
+* { margin: 0; }
 
 body {
   font-family: 'Mija', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,6 +16,7 @@ body {
 input {
   height: 46px;
   width: 100%;
+  max-width: 1020px;
   background: #2e2e2e;
   box-shadow: none;
   border: none;
@@ -29,13 +28,14 @@ input {
   font-size: 18px;
   color: #fff;
   box-sizing: border-box;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  caret-color: transparent;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 input:focus {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: rgba(46, 46, 46, 0.5);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18), 0 2px 2px rgba(0, 0, 0, 0.34);
 }
 
 .search-container {
@@ -65,27 +65,25 @@ a {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  max-width: 920px;
+  max-width: 1020px;
 }
 
 .categorias {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(190px, max-content));
   grid-gap: 5px;
   justify-content: center;
 }
 
 .categorias div {
   display: flex;
-  /* flex: 1 1 150px;  Stretching: */
-  /* flex: 0 1 200px;  No stretching: */
   flex-direction: column;
-  align-items: center; /* ou 'center' se você quiser centralizar os itens */
+  align-items: center;
   background-color: #2e2e2e;
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .categorias div h2 {
@@ -94,39 +92,23 @@ a {
   padding-bottom: 10px;
 }
 
-.categorias div.azul h2 {
-  font-size: 1.2rem;
-  color: #4dd0e1;
-}
-
-.categorias div.verde h2 {
-  font-size: 1.2rem;
-  color: #81c784;
-}
-
-.categorias div.rosa h2 {
-  font-size: 1.2rem;
-  color: #f06292;
-}
-
-.categorias div.amarelo h2 {
-  font-size: 1.2rem;
-  color: #fff176;
+.categorias div a {
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
-.main #other-content .funky h4,
-.main #other-content .funky a:hover {
-  color: #4db6ac;
-}
+.categorias div.azul h2 { color: #4dd0e1; }
+.categorias div.verde h2 { color: #81c784; }
+.categorias div.rosa h2 { color: #f06292; }
+.categorias div.amarelo h2 { color: #fff176; }
+.categorias div.laranja h2 { color: #ff8a65; }
+.categorias div.laranja h2 { color: #ff8a65; }
+
 .main #other-content .purple h4,
 .main #other-content .purple a:hover {
   color: #9575cd;
 }
-.main #other-content .upvoty h4,
-.main #other-content .upvoty a:hover {
-  color: #ff8a65;
-}
+
 .main #other-content .indigo h4,
 .main #other-content .indigo a:hover {
   color: #7986cb;

@@ -8,18 +8,17 @@ function updateDateTime() {
   minutes = minutes < 10 ? '0' + minutes : minutes
   seconds = seconds < 10 ? '0' + seconds : seconds
 
-  let greeting = 'Boa noite'
+  let greeting = '<i class="fa-solid fa-moon"></i> Boa noite'
 
   if (hours < 12) {
-    greeting = 'Bom dia'
+    greeting = '<i class="fa-solid fa-sun"></i> Bom dia'
   } else if (hours < 18) {
-    greeting = 'Boa tarde'
+    greeting = '<i class="fa-solid fa-sun"></i> Boa tarde'
   }
 
-  document.getElementById('greeting').textContent = greeting
+  document.getElementById('greeting').innerHTML = greeting
   document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`
 }
 
 setInterval(updateDateTime, 1000)
-
 updateDateTime()

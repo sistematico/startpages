@@ -1,9 +1,21 @@
 @font-face {
-    font-family: 'Mija';
-    src: url('../fonts/mija/mija.woff2') format('woff2'),
-        url('../fonts/mija/mija.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Nunito';
+  src: url('../fonts/nunito/nunito.woff2') 
+    format('woff2'), 
+    url('../fonts/nunito/nunito.woff') 
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Mija';
+  src: url('../fonts/mija/mija.woff2') 
+    format('woff2'), 
+    url('../fonts/mija/mija.woff') 
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
