@@ -5,29 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal StartPage</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link 
-      rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-      crossorigin="anonymous" 
-      referrerpolicy="no-referrer" 
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <header>
         <h1 id="greeting">Bom dia</h1>
         <div id="time"></div>
-      </div>
-      <div>
-        <form class="search-container" id="searchform" method="get" action="https://www.google.com/search" target="_blank">
+      </header>
+
+      <div class="search-container">
+        <form class="search" id="searchform" method="get" action="https://www.google.com/search" target="_blank">
           <img src="https://raw.githubusercontent.com/sistematico/startpages/main/minimal/img/google.svg" id="currentServiceIcon" class="search-icon" />
           <input type="text" name="q" id="search" placeholder="Google" autofocus />
         </form>
       </div>
-      <div class="categorias">
-        <div class="amarelo">
-          <h2><i class="fa-solid fa-code"></i> devel</h2>
+
+      <div class="blocks">
+        <div class="block">
+          <h2 class="amarelo"><i class="fa-solid fa-code"></i> devel</h2>
           <a href="https://chat.openai.com" target="_blank">chat gpt</a>
           <a href="https://bun.sh" target="_blank">bun</a>
           <a href="https://hono.dev" target="_blank">hono</a>
@@ -38,8 +34,8 @@
           <a href="https://prisma.io" target="_blank">prisma</a>
           <a href="https://htmx.org" target="_blank">htmx</a>
         </div>
-        <div class="laranja">
-          <h2><i class="fa-solid fa-bolt-lightning"></i> recursos</h2>
+        <div class="block">
+          <h2 class="laranja"><i class="fa-solid fa-bolt-lightning"></i> recursos</h2>
           <a href="https://github.com" target="_blank">github</a>
           <a href="https://cdnjs.com" target="_blank">cdnjs</a>
           <a href="https://icones.js.com" target="_blank">icones</a>
@@ -47,64 +43,55 @@
           <a href="https://transfonter.org" target="_blank">transfonter</a>
           <a href="https://colorhunt.co" target="_blank">color hunt</a>
         </div>
-        <div class="azul">
-          <h2><i class="fa-solid fa-screwdriver-wrench"></i> util</h2>
+        <div class="block">
+          <h2 class="azul"><i class="fa-solid fa-screwdriver-wrench"></i> util</h2>
           <a href="https://icloud.com" target="_blank">icloud</a>
           <a href="https://gmail.com" target="_blank">gmail</a>
           <a href="https://hackmd.io" target="_blank">hackmd</a>
           <a href="https://hackmd.io/@sistematico/vim-cheatsheet" target="_blank">vim cs</a>
           <a href="https://hackmd.io/@sistematico/postgresql-cheatsheet" target="_blank">postgres cs</a>
         </div>
-        <div class="verde">
-          <h2><i class="fa-solid fa-user-group"></i> social</h2>
+        <div class="block">
+          <h2 class="verde"><i class="fa-solid fa-user-group"></i> social</h2>
           <a href="https://web.whatsapp.com" target="_blank">whatsapp</a>
           <a href="https://vuejs.org" target="_blank">facebook</a>
           <a href="https://twitter.com" target="_blank">twitter</a>
           <a href="https://keybase.io" target="_blank">keybase</a>
         </div>
-        <div class="rosa">
-          <h2><i class="fa-solid fa-bicycle"></i> fun</h2>
+        <div class="block">
+          <h2 class="rosa"><i class="fa-solid fa-bicycle"></i> fun</h2>
           <a href="https://youtube.com" target="_blank">youtube</a>
           <a href="https://music.youtube.com" target="_blank">youtube music</a>
           <a href="https://pluto.tv" target="_blank">pluto tv</a>
         </div>
       </div>
-      <div class="categorias">
-        <div class="amarelo">
-          <h2>
-            <a href="https://ananke.paxa.dev" target="_blank">
-              <i class="fa-solid fa-server"></i> ananke
-            </a>
+
+      <div class="blocks">
+        <div class="block">
+          <h2 class="amarelo">
+            <a href="https://ananke.paxa.dev" target="_blank"> <i class="fa-solid fa-server"></i> ananke </a>
           </h2>
         </div>
-        <div class="laranja">
-          <h2>
-            <a href="https://eris.paxa.dev" target="_blank">
-              <i class="fa-solid fa-server"></i> eris
-            </a>
+        <div class="block">
+          <h2 class="laranja">
+            <a href="https://eris.paxa.dev" target="_blank"> <i class="fa-solid fa-server"></i> eris </a>
           </h2>
           <a href="https://agrocomm.com.br" target="_blank">agrocomm</a>
           <a href="https://paxa.dev" target="_blank">paxa</a>
         </div>
-        <div class="azul">
-          <h2>
-            <a href="https://nix.paxa.dev" target="_blank">
-              <i class="fa-solid fa-server"></i> nix
-            </a>
+        <div class="block">
+          <h2 class="azul">
+            <a href="https://nix.paxa.dev" target="_blank"> <i class="fa-solid fa-server"></i> nix </a>
           </h2>
         </div>
-        <div class="verde">
-          <h2>
-            <a href="https://persephone.paxa.dev" target="_blank">
-              <i class="fa-solid fa-server"></i> persephone
-            </a>
+        <div class="block">
+          <h2 class="verde">
+            <a href="https://persephone.paxa.dev" target="_blank"> <i class="fa-solid fa-server"></i> persephone </a>
           </h2>
         </div>
-        <div class="rosa">
-          <h2>
-            <a href="https://psique.paxa.dev" target="_blank">
-              <i class="fa-solid fa-server"></i> psique
-            </a>
+        <div class="block">
+          <h2 class="rosa">
+            <a href="https://psique.paxa.dev" target="_blank"> <i class="fa-solid fa-server"></i> psique </a>
           </h2>
         </div>
       </div>
