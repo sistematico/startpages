@@ -15,13 +15,11 @@ body, html {
   min-height: 100vh; /* Altura total da viewport */
 }
 
-body {
+body, 
+header, 
+.blocks, 
+.search-container {
   width: 100%;
-}
-
-header, .blocks, .search-container {
-  width: 100%;
-  max-width: 1020px;
 }
 
 header {
@@ -30,7 +28,7 @@ header {
 }
 
 .container {
-  max-width: 1020px;
+  max-width: 1440px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -89,7 +87,7 @@ a {
 .blocks {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .block {
@@ -120,5 +118,3 @@ a {
 .blocks div h2.rosa { color: #f06292; }
 .blocks div h2.amarelo { color: #fff176; }
 .blocks div h2.laranja { color: #ff8a65; }
-.blocks div h2.laranja { color: #ff8a65; }
-
