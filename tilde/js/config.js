@@ -203,15 +203,6 @@ const CONFIG = {
     },
     {
       category: 'Videos',
-      name: 'Laracasts',
-      key: 'lc',
-      url: 'https://laracasts.com',
-      color: '#1a73e8',
-      icon: 'laravel',
-      quickLaunch: false,
-    },
-    {
-      category: 'Videos',
       name: 'Twitch',
       key: 'tw',
       url: 'https://www.twitch.tv',
