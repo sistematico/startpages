@@ -22,6 +22,10 @@ body {
   transition: background-color 300ms ease-in-out;
 }
 
+main {
+  margin: 2rem 0;
+}
+
 .container {
   display: flex;
   place-items: center;
@@ -162,6 +166,7 @@ input {
 /* SELECT */
 select {
   -webkit-appearance: none;
+  appearance: none;
   text-indent: 0.01px;
   text-overflow: "";
   border: none;
