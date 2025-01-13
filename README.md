@@ -21,5 +21,5 @@ Se esse repositório foi útil pra você de alguma maneira(eu espero que sim :gr
 [[pt](./README.pt_BR.md)|en]
 
 <a href="./README.pt_BR.md">
-  <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" width="100" height="70" alt="Brasil" />
+  <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" width="50" height="35" alt="Brasil" />
 </a>
