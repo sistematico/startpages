@@ -1,6 +1,8 @@
 # 🌎 StartPages
 
-Handy crafted Startpages from [/r/startpages](https://reddit.com/r/startpages)
+Handy crafted Startpages from:
+- [/r/startpages](https://reddit.com/r/startpages)
+- [Github](https://github.com/search?q=startpage&type=repositories)
 
 ### 🤖 CI/CD
 
@@ -10,7 +12,7 @@ Handy crafted Startpages from [/r/startpages](https://reddit.com/r/startpages)
 
 - [https://pages.paxa.dev](https://pages.paxa.dev)
 
-## 💰 Ajude
+## 💰 Help
 
 Se esse repositório foi útil pra você de alguma maneira(eu espero que sim :grinning:) considere doar um valor simbólico ou me patrocinar para que eu possa ajudar sempre mais.
 
