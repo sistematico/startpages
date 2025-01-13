@@ -18,4 +18,8 @@ Se esse repositório foi útil pra você de alguma maneira(eu espero que sim :gr
 
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/sistematico?label=Github%20Sponsors)
 
-[[pt](./README.pt_BR.md)|[en](./README.md)]
+[[pt](./README.pt_BR.md)|en]
+
+<a href="./README.pt_BR.md">
+  <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" width="100" height="70" alt="Brasil" />
+</a>
