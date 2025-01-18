@@ -2,6 +2,8 @@ const title = document.getElementById("code-title")
 const placeholder = document.getElementById("code")
 const select = document.getElementById("snippets")
 
+// https://ui.dev/get-current-url-javascript
+
 if (window.location.protocol != 'file:') {
   fetch('assets/json/snippets.json')
     .then(res => res.json())
