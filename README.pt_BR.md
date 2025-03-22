@@ -20,8 +20,6 @@ Se esse repositório foi útil pra você de alguma maneira(eu espero que sim :gr
 
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/sistematico?label=Github%20Sponsors)
 
-[pt|[en](./README.md)]
-
 <a href="./README.md">
   <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" width="50" height="26" alt="United States" />
 </a>
