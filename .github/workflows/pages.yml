@@ -1,39 +1,30 @@
-name: Deploy to Github Pages
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-
-  workflow_dispatch:
+    branches:
+      - main # ou a branch que contém seus arquivos
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout código
+        uses: actions/checkout@v3
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
 
-      - name: Upload artifact
-        # uses: actions/upload-pages-artifact@v2
-        uses: actions/upload-artifact@v4
+      - name: Upload arquivo de build
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: './' # ou o caminho para o diretório de build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy para o GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
