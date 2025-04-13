@@ -1,0 +1,9 @@
+@echo off
+echo Starting Start Ichi Full Development Environment...
+echo.
+
+echo Starting Flask backend in a new window...
+start cmd /k "run_dev.bat"
+
+echo Starting React frontend...
+call run_react_dev.bat 

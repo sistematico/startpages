@@ -1,0 +1,280 @@
+/* Source Code Pro font is imported in index.html */
+
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #cccccc;
+  --accent-color: #4ee06e;
+  --accent-color-secondary: #4e90e0;
+  --accent-color-tertiary: #e04e9c;
+  --accent-color-quaternary: #e0c14e;
+  --error-color: #e05a4e;
+  --border-color: #333333;
+  --font-mono: 'Source Code Pro', monospace;
+  --font-size-small: 12px;
+  --font-size-base: 14px;
+  --font-size-large: 16px;
+}
+
+/* Banner styles */
+.banner {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 300px; /* Increased from 200px to 300px */
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow under the banner */
+  border-radius: 12px; /* Add rounded corners to the banner container */
+}
+
+.banner-image {
+  width: 110%; /* Slightly wider than container to allow movement */
+  height: 110%; /* Slightly taller than container to allow movement */
+  object-fit: cover; /* Image will scale to fill the container */
+  display: block;
+  margin: 0;
+  position: absolute;
+  animation: panAnimation 15s ease-in-out infinite alternate;
+  transform-origin: center center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  will-change: transform; /* Hint for browser to optimize */
+  backface-visibility: hidden; /* Prevents flickering in some browsers */
+  -webkit-backface-visibility: hidden; /* For Safari */
+  -webkit-transform-style: preserve-3d; /* For Safari */
+  border-radius: 12px; /* Add rounded corners to the image */
+}
+
+.banner-image.loaded {
+  opacity: 1;
+}
+
+@keyframes panAnimation {
+  0% {
+    transform: scale(1.05) translate(-2%, -2%);
+  }
+  50% {
+    transform: scale(1.05) translate(2%, 0%);
+  }
+  100% {
+    transform: scale(1.05) translate(-2%, 2%);
+  }
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  @keyframes panAnimation {
+    0% {
+      transform: scale(1.04) translate(-1.5%, -1.5%);
+    }
+    50% {
+      transform: scale(1.04) translate(1.5%, 0%);
+    }
+    100% {
+      transform: scale(1.04) translate(-1.5%, 1.5%);
+    }
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .banner {
+    height: 250px; /* Increased from 150px to 250px */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-image {
+    animation-duration: 12s;
+  }
+  
+  @keyframes panAnimation {
+    0% {
+      transform: scale(1) translate(0%, 0%);
+    }
+    50% {
+      transform: scale(1) translate(0%, 0%);
+    }
+    100% {
+      transform: scale(1) translate(0%, 0%);
+    }
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .banner {
+    height: 200px; /* Increased from 120px to 200px */
+  }
+  
+  .banner-image {
+    animation-duration: 10s;
+  }
+  
+  @keyframes panAnimation {
+    0% {
+      transform: scale(1) translate(0%, 0%);
+    }
+    50% {
+      transform: scale(1) translate(0%, 0%);
+    }
+    100% {
+      transform: scale(1) translate(0%, 0%);
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-weight: normal;
+}
+
+html, body {
+  font-family: var(--font-mono);
+}
+
+body {
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.terminal-app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  font-family: var(--font-mono);
+}
+
+.terminal-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  padding: 0 1rem;
+}
+
+.terminal-error {
+  color: var(--error-color);
+  font-family: var(--font-mono);
+  font-weight: normal;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+.terminal-loading {
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+/* General terminal styles */
+.terminal-btn {
+  background: transparent;
+  color: var(--accent-color);
+  border: none;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  font-weight: normal;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.terminal-btn:hover {
+  text-decoration: underline;
+}
+
+.terminal-delete-btn {
+  color: var(--error-color);
+  font-weight: 600;
+}
+
+.terminal-edit-btn {
+  color: var(--accent-color-secondary);
+  font-weight: 600;
+}
+
+.terminal-save-btn {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.terminal-cancel-btn {
+  color: var(--accent-color-quaternary);
+  font-weight: 600;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-base);
+  font-weight: normal;
+  padding: 2px 4px;
+  margin-left: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom-color: var(--accent-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .terminal-container {
+    padding: 0.5rem;
+  }
+}
+
+/* Fix font weight for specific elements */
+.terminal-loading,
+.terminal-error,
+label,
+input,
+.terminal-btn,
+.terminal-toggle-btn,
+.terminal-submit-btn {
+  font-weight: normal;
+}
+
+.terminal-toggle-banner-btn {
+  color: var(--accent-color-tertiary);
+}
+
+/* Leave the delete button with bolder weight */
+.terminal-delete-btn {
+  color: var(--error-color);
+  font-weight: 600;
+}
+
+.terminal-edit-btn {
+  color: var(--accent-color-secondary);
+  font-weight: 600;
+}
+
+.terminal-save-btn {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.terminal-cancel-btn {
+  color: var(--accent-color-quaternary);
+  font-weight: 600;
+} 

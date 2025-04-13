@@ -1,0 +1,51 @@
+.terminal-link.typing {
+  opacity: 1;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 30px);
+  flex: 1;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 300;
+  font-family: 'Source Code Pro', 'Fira Mono', 'IBM Plex Mono', monospace;
+  letter-spacing: 0.03em;
+  transition: font-weight 0.2s ease, color 0.2s ease;
+}
+
+.terminal-link:hover {
+  text-decoration: underline;
+  color: var(--accent-color-secondary);
+  font-weight: 400 !important;
+  font-family: 'Source Code Pro', 'Fira Mono', 'IBM Plex Mono', monospace;
+  transition: all 0.2s ease;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--accent-color);
+  animation: cursor-blink 1s infinite;
+  font-family: 'Source Code Pro', 'Fira Mono', 'IBM Plex Mono', monospace;
+}
+
+/* Animation for the cursor blinking */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Animation for typed text color transition */
+@keyframes text-color-change {
+  0% { color: var(--accent-color); font-weight: 300; }
+  25% { color: var(--accent-color-secondary); font-weight: 300; }
+  50% { color: var(--accent-color-tertiary); font-weight: 400; }
+  75% { color: var(--accent-color-quaternary); font-weight: 400; }
+  100% { color: var(--text-color); font-weight: 500; }
+}
+
+.terminal-typing-complete {
+  animation: text-color-change 2s forwards;
+  font-family: 'Source Code Pro', 'Fira Mono', 'IBM Plex Mono', monospace;
+} 

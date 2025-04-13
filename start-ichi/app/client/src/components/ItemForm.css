@@ -1,0 +1,188 @@
+.item-form {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  background: rgba(16, 18, 27, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.item-form h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.item-form h2::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(to right, #9c27b0, #3f51b5);
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: rgba(124, 77, 255, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: #5e35b1;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(94, 53, 177, 0.2);
+}
+
+.submit-btn:hover {
+  background: #7c4dff;
+}
+
+.terminal-buttons-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.terminal-form-container {
+  margin-top: 1.5rem;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 1rem;
+  font-family: var(--font-mono);
+}
+
+.terminal-toggle-btn {
+  background: transparent;
+  color: var(--accent-color);
+  border: none;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.terminal-toggle-edit-btn {
+  color: var(--accent-color-tertiary);
+  font-weight: 700;
+}
+
+.terminal-toggle-banner-btn {
+  color: #9c27b0; /* Purple color for edit banner button */
+  font-weight: 700;
+}
+
+.terminal-toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.terminal-form {
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.terminal-input-group {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-input-group label {
+  color: var(--accent-color-quaternary);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.terminal-input-group input {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.terminal-submit-btn {
+  background: transparent;
+  color: var(--accent-color-secondary);
+  border: none;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.terminal-submit-btn:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.terminal-command {
+  font-family: var(--font-mono);
+}
+
+.terminal-command-prompt {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  font-weight: 700;
+}
+
+.edit-toggle-button {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.add-button {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.submit-button {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+} 
