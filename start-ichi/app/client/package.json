@@ -9,7 +9,7 @@
     "axios": "^1.6.0",
     "color-thief-browser": "^2.0.2",
     "framer-motion": "^12.5.0",
-    "http-proxy-middleware": "^2.0.6",
+    "http-proxy-middleware": "^2.0.9",
     "p5": "^1.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
