@@ -43,7 +43,7 @@ const default_configuration = {
   openLastVisitedTab: true,
   tabs: [
     {
-      name: "myself",
+      name: "home",
       background_url: "src/img/banners/banner_09.gif",
       categories: [
         {
@@ -96,34 +96,10 @@ const default_configuration = {
           name: "media",
           links: [
             {
-              name: "уп",
-              url: "https://www.pravda.com.ua",
+              name: "google news",
+              url: "https://news.google.com/home?hl=pt-BR",
               icon: "news",
               icon_color: palette.green,
-            },
-            {
-              name: "mil.in.ua",
-              url: "https://mil.in.ua",
-              icon: "badge-filled",
-              icon_color: palette.peach,
-            },
-            {
-              name: "куток",
-              url: "https://kutok.io",
-              icon: "border-radius",
-              icon_color: palette.red,
-            },
-            {
-              name: "ґрунт",
-              url: "https://grnt.media",
-              icon: "eye-bolt",
-              icon_color: palette.blue,
-            },
-            {
-              name: "village",
-              url: "https://www.village.com.ua",
-              icon: "home-2",
-              icon_color: palette.mauve,
             },
           ],
         },
@@ -188,12 +164,6 @@ const default_configuration = {
         {
           name: "resources",
           links: [
-            {
-              name: "dou",
-              url: "https://dou.ua",
-              icon: "brand-prisma",
-              icon_color: palette.green,
-            },
             {
               name: "hackernews",
               url: "https://news.ycombinator.com",
@@ -276,28 +246,10 @@ const default_configuration = {
           name: "video",
           links: [
             {
-              name: "anilist",
-              url: "https://anilist.co/home",
-              icon: "brand-funimation",
-              icon_color: palette.green,
-            },
-            {
               name: "youtube",
               url: "https://www.youtube.com",
               icon: "brand-youtube",
               icon_color: palette.peach,
-            },
-            {
-              name: "patreon",
-              url: "https://www.patreon.com",
-              icon: "brand-patreon",
-              icon_color: palette.red,
-            },
-            {
-              name: "kyivstar",
-              url: "https://tv.kyivstar.ua",
-              icon: "star-filled",
-              icon_color: palette.blue,
             },
           ],
         },

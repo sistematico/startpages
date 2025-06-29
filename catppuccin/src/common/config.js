@@ -5,7 +5,7 @@ class Config {
     overrideStorage: false,
     temperature: {
       // Default city for weather display
-      location: "London",
+      location: "Campo Grande",
       // Temperature scale: C for Celsius, F for Fahrenheit
       scale: "C",
     },
@@ -17,9 +17,9 @@ class Config {
     additionalClocks: [
       {
         // Label displayed next to the clock
-        label: "UA",
+        label: "GMT",
         // IANA timezone name (handles DST automatically)
-        timezone: "Europe/Kyiv",
+        timezone: "GMT",
         // 24-hour format
         format: "h:i",
       },
