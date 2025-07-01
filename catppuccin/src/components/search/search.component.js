@@ -51,6 +51,7 @@ class Search extends Component {
       #search div {
           position: relative;
           width: 100%;
+          padding: 0 20px;
       }
 
       #search input {
@@ -60,7 +61,7 @@ class Search extends Component {
           box-shadow: inset 0 -2px ${CONFIG.palette.crust};
           padding: .5em 0;
           background: none;
-          font: 500 22px 'Roboto', sans-serif;
+          font: 500 22px 'Nunito', sans-serif;
           letter-spacing: 1px;
           color: ${CONFIG.palette.lavender};
       }
@@ -96,14 +97,14 @@ class Search extends Component {
           padding: 0;
           top: 50px;
           left: 0;
-          margin: 1em 0 0 0;
+          margin: .5em 0 0 0;
       }
 
       .search-engines li p {
           cursor: default;
           transition: all .2s;
-          font-size: 12px;
-          font-family: 'Roboto', sans-serif;
+          font-size: 13px;
+          font-family: 'Nunito', sans-serif;
       }
 
       .search-engines li {
