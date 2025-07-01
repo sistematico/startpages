@@ -10,7 +10,7 @@ let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
 const default_configuration = {
   overrideStorage: true,
   temperature: {
-    location: "London",
+    location: "Campo Grande",
     scale: "C",
   },
   clock: {
@@ -133,29 +133,29 @@ const default_configuration = {
           ],
         },
         {
-          name: "challenges",
+          name: "ia",
           links: [
             {
-              name: "kaggle",
-              url: "https://www.kaggle.com",
+              name: "chatgpt",
+              url: "https://www.chatgpt.com",
               icon: "brain",
               icon_color: palette.green,
             },
             {
-              name: "leetcode",
-              url: "https://leetcode.com",
+              name: "claude",
+              url: "https://claude.ai",
               icon: "code-plus",
               icon_color: palette.peach,
             },
             {
-              name: "exercism",
-              url: "https://exercism.org",
+              name: "deepseek",
+              url: "https://chat.deepseek.com",
               icon: "code-minus",
               icon_color: palette.red,
             },
             {
-              name: "aoc",
-              url: "https://adventofcode.com",
+              name: "grok",
+              url: "https://grok.com",
               icon: "brand-linktree",
               icon_color: palette.blue,
             },
