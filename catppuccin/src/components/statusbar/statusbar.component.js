@@ -350,7 +350,7 @@ class Statusbar extends Component {
    */
   activate(target, item) {
     target.forEach((i) => i.removeAttribute("active"));
-    item.setAttribute("active", "");
+    if (item) item.setAttribute("active", "");
   }
 
   /**

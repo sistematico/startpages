@@ -15,7 +15,6 @@ class Search extends Component {
    */
   constructor() {
     super();
-
     this.engines = CONFIG.search.engines;
     this.suggestions = [];
     this.selectedSuggestion = -1;
@@ -197,7 +196,7 @@ class Search extends Component {
    */
   imports() {
     return [
-      this.getFontResource('roboto'),
+      this.getFontResource('nunito'),
       this.getIconResource('material')
     ];
   }
