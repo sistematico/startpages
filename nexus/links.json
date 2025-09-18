@@ -1,0 +1,32 @@
+{
+  "Trabalho": [
+    { "name": "GitHub", "url": "https://github.com", "icon": "fab fa-github" },
+    { "name": "Stack Overflow", "url": "https://stackoverflow.com", "icon": "fab fa-stack-overflow" },
+    { "name": "LinkedIn", "url": "https://linkedin.com", "icon": "fab fa-linkedin" },
+    { "name": "Gmail", "url": "https://mail.google.com", "icon": "far fa-envelope" },
+    { "name": "Notion", "url": "https://notion.so", "icon": "fas fa-sticky-note" },
+    { "name": "Trello", "url": "https://trello.com", "icon": "fab fa-trello" }
+  ],
+  "Entretenimento": [
+    { "name": "YouTube", "url": "https://youtube.com", "icon": "fab fa-youtube" },
+    { "name": "Netflix", "url": "https://netflix.com", "icon": "fab fa-netflix" },
+    { "name": "Spotify", "url": "https://spotify.com", "icon": "fab fa-spotify" },
+    { "name": "Twitch", "url": "https://twitch.tv", "icon": "fab fa-twitch" },
+    { "name": "Steam", "url": "https://store.steampowered.com", "icon": "fab fa-steam" }
+  ],
+  "Social": [
+    { "name": "Twitter", "url": "https://twitter.com", "icon": "fab fa-twitter" },
+    { "name": "Instagram", "url": "https://instagram.com", "icon": "fab fa-instagram" },
+    { "name": "Facebook", "url": "https://facebook.com", "icon": "fab fa-facebook" },
+    { "name": "Reddit", "url": "https://reddit.com", "icon": "fab fa-reddit" },
+    { "name": "Discord", "url": "https://discord.com", "icon": "fab fa-discord" },
+    { "name": "WhatsApp", "url": "https://web.whatsapp.com", "icon": "fab fa-whatsapp" }
+  ],
+  "Ferramentas": [
+    { "name": "Google Drive", "url": "https://drive.google.com", "icon": "fab fa-google-drive" },
+    { "name": "ChatGPT", "url": "https://chat.openai.com", "icon": "fas fa-robot" },
+    { "name": "Google Translate", "url": "https://translate.google.com", "icon": "fas fa-language" },
+    { "name": "Canva", "url": "https://canva.com", "icon": "fas fa-paint-brush" },
+    { "name": "Figma", "url": "https://figma.com", "icon": "fab fa-figma" }
+  ]
+}
