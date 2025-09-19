@@ -1,29 +1,7 @@
-let t = new URL(window.location.href).searchParams.get("t")
 const currentTheme = localStorage.getItem('theme');
 const logo = document.querySelector("#logo");
 const icon = document.querySelector("#theme-icon");
 let theme = 'light';
-
-function removeURLParameter(url, parameter) {
-    //prefer to use l.search if you have a location/link object
-    var urlparts = url.split('?');   
-    if (urlparts.length >= 2) {
-
-        var prefix = encodeURIComponent(parameter) + '=';
-        var pars = urlparts[1].split(/[&;]/g);
-
-        //reverse iteration as may be destructive
-        for (var i = pars.length; i-- > 0;) {    
-            //idiom for string.startsWith
-            if (pars[i].lastIndexOf(prefix, 0) !== -1) {  
-                pars.splice(i, 1);
-            }
-        }
-
-        return urlparts[0] + (pars.length > 0 ? '?' + pars.join('&') : '');
-    }
-    return url;
-}
 
 function switchTheme() {
     if (theme === 'light') {
@@ -42,6 +20,29 @@ function switchTheme() {
      }    
 }
 
+// Função para resetar todas as preferências
+function resetAllPreferences() {
+    if (confirm('Tem certeza que deseja limpar todas as preferências?\n\nIsso irá:\n- Remover todos os links personalizados\n- Resetar o tema para claro\n- Limpar todas as configurações salvas')) {
+        // Limpar localStorage
+        localStorage.removeItem('gaeguBookmarks');
+        localStorage.removeItem('theme');
+        
+        // Resetar tema para claro
+        theme = 'light';
+        document.documentElement.setAttribute('data-theme', 'light');
+        logo.classList.remove("invert");
+        icon.src = "assets/img/moon.svg";
+        
+        // Recarregar links padrão
+        if (typeof renderLinks === 'function') {
+            renderLinks();
+        }
+        
+        alert('Todas as preferências foram limpa com sucesso!');
+    }
+}
+
+// Inicializar tema
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
   
@@ -50,9 +51,15 @@ if (currentTheme) {
         logo.classList.add("invert");
         icon.src = "assets/img/sun.svg";
     }
-} else if (t !== null) {
-    theme = t
-    switchTheme()
 }
 
+// Event listeners
 icon.addEventListener('click', switchTheme, false);
+
+// Adicionar event listener para o botão de reset quando o DOM carregar
+document.addEventListener('DOMContentLoaded', function() {
+    const resetButton = document.getElementById('reset-button');
+    if (resetButton) {
+        resetButton.addEventListener('click', resetAllPreferences);
+    }
+});
