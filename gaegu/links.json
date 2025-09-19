@@ -1,0 +1,75 @@
+{
+  "Local": [
+    { "name": "3000", "url": "http://localhost:3000" },
+    { "name": "5173", "url": "http://localhost:5173" },
+    { "name": "4321", "url": "http://localhost:4321" },
+    { "name": "80", "url": "http://localhost" },
+    { "name": "443", "url": "https://localhost" }
+  ],
+  "Sites": [
+    { "name": "lucasbrum", "url": "https://lucasbrum.dev" },
+    { "name": "agrocomm", "url": "https://agrocomm.com.br" },
+    { "name": "somdomato", "url": "https://somdomato.com" }
+  ],
+  "Desenvolvimento": [
+    { "name": "drizzle", "url": "https://orm.drizzle.team/docs/get-started/postgresql-new" },
+    { "name": "gists", "url": "https://gist.github.com/sistematico" },
+    { "name": "github", "url": "https://github.com/sistematico/" },
+    { "name": "gitlab", "url": "https://gitlab.com/sistematico/" },
+    { "name": "bitbucket", "url": "https://bitbucket.com/sistematico/" },
+    { "name": "codepen", "url": "https://codepen.io" },
+    { "name": "jsfiddle", "url": "https://jsfiddle.net" },
+    { "name": "flexbox", "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" },
+    { "name": "css grid", "url": "https://css-tricks.com/snippets/css/complete-guide-grid/" }
+  ],
+  "Next.js": [
+    { "name": "next docs", "url": "https://nextjs.org/docs" },
+    { "name": "next-auth", "url": "https://authjs.dev" },
+    { "name": "waku", "url": "https://waku.gg" }
+  ],
+  "Drizzle": [
+    { "name": "drizzle", "url": "https://orm.drizzle.team/docs/overview" },
+    { "name": "studio", "url": "https://authjs.dev" },
+    { "name": "local studio", "url": "https://local.drizzle.studio" }
+  ],
+  "Tailwind": [
+    { "name": "docs", "url": "https://tailwindcss.com/docs" },
+    { "name": "components", "url": "https://tailwindcss.com/docs" },
+    { "name": "hyperui", "url": "https://www.hyperui.dev/" },
+    { "name": "flowbite", "url": "https://flowbite.com/blocks/" }
+  ],
+  "Fun": [
+    { "name": "youtube", "url": "https://youtube.com/" },
+    { "name": "gmail", "url": "https://mail.google.com" },
+    { "name": "photos", "url": "https://photos.google.com" },
+    { "name": "drive", "url": "https://drive.google.com" },
+    { "name": "yt music", "url": "https://music.youtube.com" },
+    { "name": "spotify", "url": "https://open.spotify.com/intl-pt/" },
+    { "name": "whatsapp", "url": "https://web.whatsapp.com" },
+    { "name": "telegram", "url": "https://web.telegram.org" },
+    { "name": "icloud", "url": "https://www.icloud.com" }
+  ],
+  "IA": [
+    { "name": "chatgpt", "url": "https://chatgpt.com" },
+    { "name": "claude", "url": "https://claude.ai" },
+    { "name": "deepseek", "url": "https://chat.deepseek.com" },
+    { "name": "grok", "url": "https://grok.com" },
+    { "name": "gemini", "url": "https://gemini.google.com" }
+  ],
+  "Social": [
+    { "name": "facebook", "url": "https://facebook.com" },
+    { "name": "instagram", "url": "https://instagram.com" },
+    { "name": "twitter", "url": "https://twitter.com" },
+    { "name": "reddit", "url": "https://reddit.com/" },
+    { "name": "linkedin", "url": "https://linkedin.com" },
+    { "name": "gab", "url": "https://gab.com" },
+    { "name": "mastodon", "url": "https://mastodon.social" }
+  ],
+  "Cheats": [
+    { "name": "dwm", "url": "https://ratfactor.com/dwm" },
+    { "name": "vue.js 3", "url": "https://dev.to/adnanbabakan/vue-3-cheat-sheet-2mh3" },
+    { "name": "vscode", "url": "https://devhints.io/vscode" },
+    { "name": "vim", "url": "https://vim.rtorr.com/" },
+    { "name": "ranger", "url": "https://gist.github.com/heroheman/aba73e47443340c35526755ef79647eb" }
+  ]
+}
