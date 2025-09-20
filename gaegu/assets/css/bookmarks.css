@@ -1,5 +1,28 @@
 /* Estilos para o sistema de bookmarks do Gaegu */
 
+/* Sobrescrever estilos do main.css para evitar conflitos */
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 100%;
+  gap: 0;
+}
+
+/* Corrigir conflitos com estilos globais */
+.link-category ul {
+  list-style-type: none;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.link-category li {
+  line-height: 20px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 /* Loading estado */
 .loading {
   text-align: center;
@@ -11,6 +34,8 @@
 /* Categoria de links */
 .link-category {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .link-category .title {
@@ -23,7 +48,8 @@
 
 .links-container {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  min-height: 120px;
 }
 
 .links-grid {
@@ -34,7 +60,7 @@
 }
 
 .link-item {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   line-height: 20px;
   padding: 0;
@@ -42,26 +68,29 @@
   position: relative;
   transition: color 0.3s ease-in-out;
   color: var(--primary-color);
+  z-index: 2;
 }
 
 .link-item:hover {
   color: var(--secondary-color);
 }
 
-.link-item:before {
+/* Sobrescrever o estilo original .effect:before */
+.link-item.effect:before {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 0;
   bottom: -3px;
-  width: 0%;
+  width: 100%;
   height: 2px;
   background: rgb(var(--highlight-color));
-  transform: translateX(-50%);
-  transition: width 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
 }
 
-.link-item:hover:before {
-  width: 85%;
+.link-item.effect:hover:before {
+  transform: scaleX(1);
 }
 
 /* Paginação */
@@ -70,7 +99,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+  margin-bottom: 10px;
   gap: 10px;
+  position: relative;
+  z-index: 3;
 }
 
 .pagination-btn {
@@ -117,9 +149,13 @@
 .control-buttons {
   display: flex;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+  clear: both;
 }
 
 /* Botão de edição */
@@ -370,10 +406,24 @@
   .control-buttons {
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
   }
   
   .edit-btn, .reset-btn {
     width: 200px;
     justify-content: center;
+  }
+  
+  .links {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 10px;
+  }
+  
+  .link-category {
+    margin-bottom: 15px;
+  }
+  
+  .links-container {
+    min-height: 100px;
   }
 }
