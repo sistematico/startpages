@@ -7,7 +7,7 @@ let defaultLinks = {};
 // Carregar links do arquivo JSON
 async function loadDefaultLinks() {
     try {
-        const response = await fetch('links.json');
+        const response = await fetch('json/links.json');
         if (!response.ok) {
             throw new Error('Não foi possível carregar os links padrão.');
         }
