@@ -1,15 +1,15 @@
 {
   "Local": [
-    { "name": "3000", "url": "http://localhost:3000" },
-    { "name": "5173", "url": "http://localhost:5173" },
-    { "name": "4321", "url": "http://localhost:4321" },
-    { "name": "80", "url": "http://localhost" },
-    { "name": "443", "url": "https://localhost" }
+    { "name": "3000", "url": "http://localhost:3000", "target": "_blank" },
+    { "name": "5173", "url": "http://localhost:5173", "target": "_blank" },
+    { "name": "4321", "url": "http://localhost:4321", "target": "_blank" },
+    { "name": "80", "url": "http://localhost", "target": "_blank" },
+    { "name": "443", "url": "https://localhost", "target": "_blank" }
   ],
   "Sites": [
-    { "name": "lucasbrum", "url": "https://lucasbrum.dev" },
-    { "name": "agrocomm", "url": "https://agrocomm.com.br" },
-    { "name": "somdomato", "url": "https://somdomato.com" }
+    { "name": "lucasbrum", "url": "https://lucasbrum.dev", "target": "_blank" },
+    { "name": "agrocomm", "url": "https://agrocomm.com.br", "target": "_blank" },
+    { "name": "somdomato", "url": "https://somdomato.com", "target": "_blank" }
   ],
   "Desenvolvimento": [
     { "name": "drizzle", "url": "https://orm.drizzle.team/docs/get-started/postgresql-new" },
