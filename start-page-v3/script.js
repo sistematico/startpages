@@ -10,7 +10,8 @@ const defaultCategories = [
     { id: 'dev', name: 'Development', icon: 'fa-solid fa-code' },
     { id: 'social', name: 'Social', icon: 'fa-solid fa-users' },
     { id: 'media', name: 'Media', icon: 'fa-solid fa-play' },
-    { id: 'productivity', name: 'Productivity', icon: 'fa-solid fa-briefcase' }
+    { id: 'productivity', name: 'Productivity', icon: 'fa-solid fa-briefcase' },
+    { id: 'resources', name: 'Resources', icon: 'fa-solid fa-cube' }
 ];
 
 const defaultLinks = {
@@ -45,6 +46,10 @@ const defaultLinks = {
         { name: 'Drive', url: 'https://drive.google.com', icon: 'fa-brands fa-google-drive' },
         { name: 'Trello', url: 'https://trello.com', icon: 'fa-brands fa-trello' },
         { name: 'Figma', url: 'https://figma.com', icon: 'fa-brands fa-figma' }
+    ],
+    'resources': [
+        { name: 'Pictogrammers', url: 'https://pictogrammers.com', icon: 'fa-solid fa-font' },
+        { name: 'TlDraw', url: 'https://tldraw.com', icon: 'fa-solid fa-font' },
     ]
 };
 
@@ -102,11 +107,11 @@ function loadSettings() {
         theme: 'dark',
         colorMode: 'multi',
         timeFormat: '12',
-        tempUnit: 'F',
+        tempUnit: 'C',
         showQuotes: 'true',
         enabledEngines: ['google', 'duckduckgo', 'github', 'youtube'],
         preferredEngine: 'google',
-        weatherLocation: 'New York,NY,US',
+        weatherLocation: 'Campo Grande,MS,BR',
         openWeatherApiKey: ''
     };
     
@@ -229,16 +234,16 @@ function updateGreeting(hour) {
     let greeting, iconHtml;
     
     if (hour >= 5 && hour < 12) {
-        greeting = 'Good morning';
+        greeting = 'Bom dia';
         iconHtml = '<span class="nf-icon">󰖜</span>';
     } else if (hour >= 12 && hour < 17) {
-        greeting = 'Good afternoon';
+        greeting = 'Boa tarde';
         iconHtml = '<i class="fa-solid fa-sun"></i>';
     } else if (hour >= 17 && hour < 21) {
-        greeting = 'Good evening';
+        greeting = 'Boa tarde';
         iconHtml = '<span class="nf-icon">󰖛</span>';
     } else {
-        greeting = 'Good night';
+        greeting = 'Boa noite';
         iconHtml = '<i class="fa-solid fa-moon"></i>';
     }
     
@@ -286,7 +291,7 @@ function setSearchEngine(engine) {
     });
     
     if (searchInput) {
-        searchInput.placeholder = `Search ${allSearchEngines[engine].name}... `;
+        searchInput.placeholder = `Pesquisar no ${allSearchEngines[engine].name}... `;
     }
 }
 
